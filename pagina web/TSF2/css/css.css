@@ -1,0 +1,343 @@
+/* BORRAR EL COMENTARIO DE ABAJO PARA VER LAS CAJAS CON BORDE */
+
+            /*
+*{
+    box-sizing: border-box;
+    outline: solid 1px black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+}
+            */
+
+/* BORRAR EL COMENTARIO DE ARRIBA PARA VER LAS CAJAS CON BORDE */
+
+                             /***** APARTADO DE GENERAL *****/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+}
+
+                             /***** APARTADO PÁGINA PRINCIPAL *****/
+
+        /* NAVBAR PRINCIPAL START */
+
+#major_navbar{
+    background-image: url(../images/fondoNavbar.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 1%;
+    position: sticky;
+    top: 0;
+}
+
+#logo_navbar{
+    min-height: 75px;
+    height: 90px;
+    float: left;
+    border-radius: 7%;
+}
+
+#ul_navbar {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: right;
+}
+
+.li_navbar{
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 175%;   
+}
+
+.navBar_items:hover{
+    border-bottom: 2px solid white;
+}
+        /* NAVBAR PRINCIPAL END */
+
+            /* SOBRE NOSOTROS START */
+
+#info_tfs{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#us{
+    margin-right: 20px;
+}
+
+#text_aboutUs{
+    margin-top: 20px;
+}
+
+#aboutUs{
+    color: rgb(0, 225, 255);
+}
+
+#aboutUs:hover{
+    border-bottom: 1px solid rgb(0, 225, 255);
+}
+
+#image_aboutUs{
+    width: 40%;
+    border-radius: 7%;
+}
+            /* SOBRE NOSOTROS END */
+
+        /* PRODUCTOS START */
+
+#products_tsf{
+    background-image: url(../images/fondoProductos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 20px;
+}
+
+#pcLenovo{
+    max-width: 35%;
+    border-radius: 10%;
+}
+
+#info_producto{
+    margin-left: 100px;
+}
+
+#button_product{
+    background-color: rgb(0, 113, 128);
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+#button_product:hover{
+    cursor: pointer;
+    color: rgb(0, 113, 128);
+    background-color: white;
+}
+        /* PRODUCTOS END */
+            /* DONATIVOS START */
+
+#donations_tsf{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#image_donation{
+    margin-top: 30px;
+    max-width: 35%;
+    border-radius: 15%;
+}
+
+#button_donation{
+    background-color: rgb(0, 113, 128);
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+#button_donation:hover{
+    cursor: pointer;
+    color: rgb(0, 113, 128);
+    background-color: white;
+}
+            /* DONATIVOS END */
+        /*FOOTER START*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    background-color:#2d2e33;
+    line-height: 1.2;
+ 
+}
+ 
+footer>.footer-col>.ul_footer{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+}
+ 
+.footer-col>h4{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(151, 173, 233);
+    padding: 5px;  
+}
+ 
+.ul_footer .li_footer .a_footer{
+    display: block;
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+ 
+.ul_footer .li_footer .a_footer:hover{
+    color: white;
+}
+ 
+.links .a_footer{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgb(151, 173, 233);
+    margin:0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+}
+ 
+.links .a_footer:hover{
+    background-color: white;
+}
+    /*FOOTER END*/
+
+        /*MARCA DE AGUA*/
+#CodeMasters{
+    background-color:#2d2e33;
+    display: flex;
+    justify-content: end;
+    color: gray;
+}
+        /*MARCA DE AGUA*/
+
+                                    /***** APARTADO DE COMPONENTES *****/
+
+#products_box{
+    margin: 0 20px 0 20px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin: 0 20px 0 20px;
+}
+
+.pc_images,.peri_images,.lapt_image,.smart_images{
+    max-width: 100%;
+    height: 250px;
+}
+
+
+.tit_catalogo{
+    color: black;
+    text-align: center;
+    margin: 85px;
+    font-size: 40px;
+}
+
+.products .card{
+    width: 270px;
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 9px;
+    margin-bottom: 60px;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #000000;
+    padding: 0 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.price{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 14px;
+    color: rgb(151, 173, 233);
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid rgb(151, 173, 233);
+    border-radius: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(151, 173, 233);
+    color: #f5f5f5;
+}
+
+                                /***** APARTADO SOBRE NOSOTROS *****/
+.background{
+    background-color: rgb(44, 44, 44);
+}
+
+.presentation_box{
+    padding: 20px 100px 10px 100px;
+}
+
+.slogan{
+    font-size: xx-large;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+                                /***** APARTADO DONATIVOS Y CONTACTANOS *****/
+
+.title_form{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.form_box{
+    padding: 0 70px 40px 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text_form,.send_button{
+    color: black;
+}
+
+.send_button{
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+.sendButton_box{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
