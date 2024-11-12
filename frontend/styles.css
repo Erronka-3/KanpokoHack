@@ -17,6 +17,16 @@ body, html {
     height: auto; /* Mantiene la proporción del logo */
 }
 
+#fechaHora {
+    position: absolute; /* Posiciona el logo de manera absoluta */
+    top: 40px; /* Ajusta la posición vertical */
+    right: 30px; /* Ajusta la posición horizontal */
+    width: 300px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    font-size: 28px;    
+    color: #fbfcfd;
+}
+
 .login-container {
     background: rgba(0, 0, 0, 0.5); /* Fondo difuminado del contenedor */
     padding: 20px;
