@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Usuarios</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
+</head>
+<body>
+    <div class="container-fluid min-vh-100 py-5">
+        
+        <!-- Título -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="h3">Administración de Usuarios</h1>
+                <p class="lead">Gestión de usuarios registrados en el sistema.</p>
+            </div>
+        </div>
+
+        <!-- Formulario para crear o editar un usuario -->
+        <section class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <h3 class="h5">Crear / Editar Usuario</h3>
+                <form id="user-form">
+                    <div class="form-group">
+                        <label for="user-name">Nombre</label>
+                        <input type="text" class="form-control" id="user-name" placeholder="Nombre del usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="user-email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-role">Rol</label>
+                        <select class="form-control" id="user-role">
+                            <option value="admin">Administrador</option>
+                            <option value="user">Usuario</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Guardar Usuario</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Listado de Usuarios -->
+        <section class="row">
+            <div class="col-12">
+                <h3 class="h5">Usuarios Registrados</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo Electrónico</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-list">
+                            <!-- Los usuarios registrados se mostrarán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script>
+        // Lista de usuarios simulada
+        let users = [
+            { name: 'Juan Pérez', email: 'juan.perez@example.com', role: 'admin' },
+            { name: 'Ana Gómez', email: 'ana.gomez@example.com', role: 'user' }
+        ];
+
+        // Función para renderizar los usuarios en la tabla
+        function renderUsers() {
+            let userList = $('#user-list');
+            userList.empty(); // Limpiar la lista antes de renderizar
+
+            users.forEach((user, index) => {
+                userList.append(`
+                    <tr>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        <td>${user.role}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editUser(${index})">Editar</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteUser(${index})">Eliminar</button>
+                        </td>
+                    </tr>
+                `);
+            });
+        }
+
+        // Función para agregar o editar un usuario
+        $('#user-form').on('submit', function(e) {
+            e.preventDefault();
+            let userName = $('#user-name').val();
+            let userEmail = $('#user-email').val();
+            let userRole = $('#user-role').val();
+
+            // Si ya existe un usuario editando, actualizarlo
+            if (editingUserIndex !== null) {
+                users[editingUserIndex] = { name: userName, email: userEmail, role: userRole };
+            } else {
+                // Si no hay usuario en edición, agregar un nuevo usuario
+                users.push({ name: userName, email: userEmail, role: userRole });
+            }
+
+            // Limpiar el formulario
+            $('#user-form')[0].reset();
+            editingUserIndex = null;  // Limpiar la variable de edición
+
+            // Actualizar la tabla con el nuevo listado de usuarios
+            renderUsers();
+        });
+
+        // Función para eliminar un usuario
+        function deleteUser(index) {
+            if (confirm('¿Estás seguro de que quieres eliminar este usuario?')) {
+                users.splice(index, 1); // Eliminar el usuario de la lista
+                renderUsers(); // Actualizar la tabla de usuarios
+            }
+        }
+
+        // Función para cargar los datos de un usuario para editar
+        let editingUserIndex = null;
+
+        function editUser(index) {
+            let user = users[index];
+            $('#user-name').val(user.name);
+            $('#user-email').val(user.email);
+            $('#user-role').val(user.role);
+            editingUserIndex = index; // Guardar el índice del usuario que estamos editando
+        }
+
+        // Inicializar la vista con los usuarios existentes
+        $(document).ready(function() {
+            renderUsers(); // Cargar los usuarios al inicio
+        });
+    </script>
+</body>
+</html>
