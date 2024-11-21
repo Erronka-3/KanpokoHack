@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Dashboard</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
+</head>
+<body>
+
+
+
+    <!-- Contenedor principal -->
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center py-3">
+        
+        <!-- Cabecera de bienvenida -->
+        <header class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="h3">Bienvenido, <span id="user-name">Usuario</span></h1>
+                <p class="lead">Rol: <strong id="user-role">Administrador</strong></p>
+            </div>
+        </header>
+
+        <!-- Sección de Resumen con tarjetas -->
+        <section class="row mb-4">
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="card text-white bg-info h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Gastos Recientes</h5>
+                        <p class="card-text">Resumen de los últimos gastos:</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Gasto 1:</strong> $500</li>
+                            <li><strong>Gasto 2:</strong> $200</li>
+                            <li><strong>Gasto 3:</strong> $300</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="card text-white bg-success h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Notificaciones</h5>
+                        <p class="card-text">Mensajes importantes y alertas:</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Notificación 1:</strong> Actualización disponible</li>
+                            <li><strong>Notificación 2:</strong> Nuevo usuario registrado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="card text-white bg-warning h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Estadísticas Generales</h5>
+                        <p class="card-text">Vista rápida de estadísticas del sistema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Accesos Rápidos -->
+        <section class="row mb-4">
+            <div class="col-12">
+                <h2 class="h5 mb-3">Accesos Rápidos</h2>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <button class="btn btn-primary mb-2 col-12 col-md-5 col-lg-2 mx-1">Usuarios</button>
+                    <button class="btn btn-secondary mb-2 col-12 col-md-5 col-lg-2 mx-1">Reportes</button>
+                    <button class="btn btn-info mb-2 col-12 col-md-5 col-lg-2 mx-1">Configuración</button>
+                    <button class="btn btn-dark mb-2 col-12 col-md-5 col-lg-2 mx-1">Soporte</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista Personalizada según Rol -->
+        <section class="row">
+            <div class="col-12">
+                <h2 class="h5 mb-3">Información de <span id="role-specific">Administrador</span></h2>
+                <div id="empresa-section" class="d-none">
+                    <p>Panel de gestión para la Empresa. Incluye estadísticas específicas y opciones de gestión de empleados.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Resumen de Empleados</li>
+                        <li class="list-group-item">Gestión de Proyectos</li>
+                        <li class="list-group-item">Análisis Financiero</li>
+                    </ul>
+                </div>
+                <div id="admin-section">
+                    <p>Panel de control para el Administrador. Incluye la configuración general y la gestión de usuarios.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Gestión de Usuarios</li>
+                        <li class="list-group-item">Configuración del Sistema</li>
+                        <li class="list-group-item">Revisión de Seguridad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/dashboard.js"></script> <!-- JS personalizado para roles -->
+ 
+</body>
+</html>
