@@ -1,0 +1,1 @@
+http://192.168.101.133:8080/realms/MiAplicacionRealm/protocol/openid-connect/logout?redirect_uri=http%3A%2F%2Flocalhost%2FKanpokoHack%2Fproject-root%2Fbackend%2FphpPrueba%2Findex.php

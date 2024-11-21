@@ -30,7 +30,7 @@ $isAdmin = in_array('admin', $userRoles);
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">Dashboard</a>
         <form class="form-inline">
-            <a href="/KanpokoHack/project-root/backend/phpPrueba/logout.php" class="btn btn-outline-danger">Logout</a>
+            <a href="/KanpokoHack/project-root/frontend/logout.php" class="btn btn-outline-danger">Logout</a>
         </form>
     </nav>
 

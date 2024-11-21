@@ -1,27 +1,40 @@
 <?php
-// Incluir config.php para tener acceso a las constantes definidas
-include('../backend/phpPrueba/config.php'); // Asegúrate de que la ruta es correcta
+include('../backend/phpPrueba/config.php');
 
 session_start();
 
-// Eliminar el token de sesión y cualquier dato relacionado
+// Eliminar sesión
 session_unset();
 session_destroy();
 
-// Definir la URL de redirección después del logout
-$redirectUri = urlencode("http://localhost/KanpokoHack/project-root/backend/phpPrueba");
+// URL de logout
+$logoutUrl = KEYCLOAK_URL . "/realms/" . REALM . "/protocol/openid-connect/logout?redirect_uri=" . rawurlencode(REDIRECT_LOGOUT_URI);
 
-// URL de Keycloak para cerrar sesión
-$logoutUrl = KEYCLOAK_URL . "/realms/" . REALM . "/protocol/openid-connect/logout?" . http_build_query([
-    'redirect_uri' => $redirectUri
-]);
+// Depurar URL generada
+file_put_contents('logout_debug.log', $logoutUrl);
 
-// Redirigir al usuario al URL de logout de Keycloak
+// Inicializar cURL para capturar respuesta de Keycloak
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $logoutUrl);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+
+// Registrar respuesta en un archivo
+file_put_contents('logout_response.log', "HTTP Code: $httpCode\nResponse: $response");
+
+// Redirigir al logout de Keycloak
 header('Location: ' . $logoutUrl);
 exit();
 ?>
 
-?>
+
+
+
+
+
+
 
 
 
