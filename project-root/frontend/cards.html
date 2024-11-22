@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tarjetas</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
+</head>
+<body>
+    <div class="container-fluid min-vh-100 py-5">
+        
+        <!-- Título -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="h3">Gestión de Tarjetas</h1>
+                <p class="lead">Activa, desactiva y consulta el estado de las tarjetas de tus colaboradores.</p>
+            </div>
+        </div>
+
+        <!-- Consulta de Tarjetas -->
+        <section class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <h3 class="h5">Consulta de Tarjetas</h3>
+                <form id="card-query-form">
+                    <div class="form-group">
+                        <label for="card-number">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="card-number" placeholder="Número de tarjeta" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Consultar Información</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Activación/Desactivación de Tarjetas -->
+        <section class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <h3 class="h5">Activar / Desactivar Tarjeta</h3>
+                <form id="card-action-form">
+                    <div class="form-group">
+                        <label for="action-card-number">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="action-card-number" placeholder="Número de tarjeta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-status">Estado de la Tarjeta</label>
+                        <select class="form-control" id="card-status">
+                            <option value="active">Activar</option>
+                            <option value="inactive">Desactivar</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Actualizar Estado</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Información de las Tarjetas -->
+        <section class="row">
+            <div class="col-12">
+                <h3 class="h5">Estado de las Tarjetas</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Número de Tarjeta</th>
+                                <th>Estado</th>
+                                <th>Última Transacción</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="card-status-list">
+                            <!-- Las tarjetas se mostrarán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script>
+        // Lista de tarjetas simulada (esto simula el comportamiento de la API)
+        let cards = [
+            { number: '1234 5678 9876 5432', status: 'active', lastTransaction: '2024-11-10' },
+            { number: '2345 6789 8765 4321', status: 'inactive', lastTransaction: '2024-11-12' }
+        ];
+
+        // Función para renderizar las tarjetas en la tabla
+        function renderCards() {
+            let cardStatusList = $('#card-status-list');
+            cardStatusList.empty(); // Limpiar la lista antes de renderizar
+
+            cards.forEach(card => {
+                cardStatusList.append(`
+                    <tr>
+                        <td>${card.number}</td>
+                        <td>${card.status === 'active' ? 'Activo' : 'Inactivo'}</td>
+                        <td>${card.lastTransaction}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="updateCardStatus('${card.number}')">Actualizar Estado</button>
+                        </td>
+                    </tr>
+                `);
+            });
+        }
+
+        // Función para consultar la información de una tarjeta
+        $('#card-query-form').on('submit', function(e) {
+            e.preventDefault();
+            let cardNumber = $('#card-number').val();
+
+            // Buscar la tarjeta en la lista simulada
+            let card = cards.find(c => c.number === cardNumber);
+            if (card) {
+                alert(`Número de tarjeta: ${card.number}\nEstado: ${card.status === 'active' ? 'Activo' : 'Inactivo'}\nÚltima Transacción: ${card.lastTransaction}`);
+            } else {
+                alert('Tarjeta no encontrada.');
+            }
+        });
+
+        // Función para actualizar el estado de la tarjeta
+        $('#card-action-form').on('submit', function(e) {
+            e.preventDefault();
+            let cardNumber = $('#action-card-number').val();
+            let newStatus = $('#card-status').val();
+
+            // Buscar la tarjeta en la lista y actualizar su estado
+            let card = cards.find(c => c.number === cardNumber);
+            if (card) {
+                card.status = newStatus;
+                alert(`El estado de la tarjeta ${cardNumber} ha sido actualizado a ${newStatus === 'active' ? 'Activo' : 'Inactivo'}`);
+                renderCards(); // Actualizar la vista
+            } else {
+                alert('Tarjeta no encontrada.');
+            }
+        });
+
+        // Inicializar la vista con las tarjetas existentes
+        $(document).ready(function() {
+            renderCards(); // Cargar las tarjetas al inicio
+        });
+
+    </script>
+</body>
+</html>
