@@ -1,41 +1,26 @@
 <?php
-include('../backend/phpPrueba/config.php'); // Cargar configuración necesaria
+// logout.php
+include('../backend/phpPrueba/config.php'); // Asegúrate de que la ruta es correcta
 
-// Función para obtener las URLs de Keycloak
-function getKeycloakUrls($hostname) {
-    if (strpos($hostname, 'localhost') !== false) {
-        return [
-            'logout' => KEYCLOAK_URL . '/realms/' . REALM . '/protocol/openid-connect/logout',
-            'redirectAfterLogout' => REDIRECT_LOGOUT_URI
-        ];
-    } else {
-        // Ajustar para otros entornos si es necesario
-        return [
-            'logout' => KEYCLOAK_URL . '/realms/' . REALM . '/protocol/openid-connect/logout',
-            'redirectAfterLogout' => REDIRECT_LOGOUT_URI
-        ];
-    }
-}
+session_start();
 
-// Obtener URLs dinámicamente
-$urls = getKeycloakUrls($_SERVER['HTTP_HOST']);
+// Eliminar el token de sesión y cualquier dato relacionado
+session_unset();   // Elimina todas las variables de sesión
+session_destroy(); // Destruye la sesión
 
-// Crear las opciones de logout
-$logoutOptions = [
-    'redirect_uri' => $urls['redirectAfterLogout']
-];
+// Codifica manualmente la URL de redirección
+$encodedRedirectUri = rawurlencode(REDIRECT_LOGOUT_URI);
 
-// Generar URL de logout con parámetros
-$logoutUrl = $urls['logout'] . '?' . http_build_query($logoutOptions);
+// Construye la URL de logout
+$logoutUrl = KEYCLOAK_URL . "/realms/" . REALM . "/protocol/openid-connect/logout?redirect_uri=" . $encodedRedirectUri;
 
-// Registrar URL para depuración (opcional)
+// Registrar la URL generada para depuración
 file_put_contents('logout_debug.log', $logoutUrl);
 
-// Redirigir al usuario a Keycloak para cerrar sesión
+// Redirigir al usuario al URL de logout de Keycloak
 header('Location: ' . $logoutUrl);
 exit();
 ?>
-
 
 
 
