@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Gastos</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
+</head>
+<body>
+    <div class="container-fluid min-vh-100 py-5">
+        
+        <!-- Título -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="h3">Gestión de Gastos</h1>
+                <p class="lead">Registra y consulta los gastos de tu empresa.</p>
+            </div>
+        </div>
+
+        <!-- Formulario para registrar un gasto -->
+        <section class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <h3 class="h5">Registrar Nuevo Gasto</h3>
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label for="expense-date">Fecha</label>
+                        <input type="date" class="form-control" id="expense-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expense-description">Descripción</label>
+                        <input type="text" class="form-control" id="expense-description" placeholder="Descripción del gasto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expense-amount">Importe</label>
+                        <input type="number" class="form-control" id="expense-amount" placeholder="Importe del gasto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expense-ticket">Adjuntar Ticket</label>
+                        <input type="file" class="form-control-file" id="expense-ticket">
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Registrar Gasto</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Filtros de Gastos -->
+        <section class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <h3 class="h5">Filtrar Gastos</h3>
+                <form id="filter-form">
+                    <div class="form-group">
+                        <label for="start-date">Fecha de Inicio</label>
+                        <input type="date" class="form-control" id="start-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">Fecha de Fin</label>
+                        <input type="date" class="form-control" id="end-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="min-amount">Importe Mínimo</label>
+                        <input type="number" class="form-control" id="min-amount" placeholder="Importe mínimo">
+                    </div>
+                    <div class="form-group">
+                        <label for="max-amount">Importe Máximo</label>
+                        <input type="number" class="form-control" id="max-amount" placeholder="Importe máximo">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Aplicar Filtros</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Historial de Gastos -->
+        <section class="row">
+            <div class="col-12">
+                <h3 class="h5">Historial de Gastos</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Descripción</th>
+                            <th>Importe</th>
+                            <th>Ticket</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenses-list">
+                        <!-- Los gastos registrados se mostrarán aquí -->
+                        <tr>
+                            <td>2024-11-10</td>
+                            <td>Compra de material de oficina</td>
+                            <td>$50</td>
+                            <td><a href="#" class="btn btn-info btn-sm">Ver Ticket</a></td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-12</td>
+                            <td>Pago de servicios</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn btn-info btn-sm">Ver Ticket</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Cálculo del Total -->
+                <div class="text-right mt-3">
+                    <h5>Total de Gastos: <span id="total-expenses">$170</span></h5>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script>
+        // Lista de gastos para simular registros
+        let expenses = [
+            { date: '2024-11-10', description: 'Compra de material de oficina', amount: 50, ticket: 'ticket1.pdf' },
+            { date: '2024-11-12', description: 'Pago de servicios', amount: 120, ticket: 'ticket2.pdf' }
+        ];
+
+        // Función para calcular el total de los gastos
+        function updateTotalExpenses() {
+            let total = expenses.reduce((acc, expense) => acc + expense.amount, 0);
+            $('#total-expenses').text('$' + total);
+        }
+
+        // Función para renderizar los gastos en la tabla
+        function renderExpenses() {
+            let expensesList = $('#expenses-list');
+            expensesList.empty(); // Limpiar la lista antes de renderizar
+
+            expenses.forEach(expense => {
+                expensesList.append(`
+                    <tr>
+                        <td>${expense.date}</td>
+                        <td>${expense.description}</td>
+                        <td>$${expense.amount}</td>
+                        <td><a href="#" class="btn btn-info btn-sm" target="_blank">Ver Ticket</a></td>
+                    </tr>
+                `);
+            });
+        }
+
+        // Registro de nuevo gasto
+        $('#expense-form').on('submit', function(e) {
+            e.preventDefault();
+            let expenseDate = $('#expense-date').val();
+            let expenseDescription = $('#expense-description').val();
+            let expenseAmount = parseFloat($('#expense-amount').val());
+            let expenseTicket = $('#expense-ticket')[0].files[0] ? $('#expense-ticket')[0].files[0].name : null;
+
+            // Agregar el nuevo gasto al arreglo de gastos
+            expenses.push({
+                date: expenseDate,
+                description: expenseDescription,
+                amount: expenseAmount,
+                ticket: expenseTicket
+            });
+
+            // Limpiar el formulario
+            $('#expense-form')[0].reset();
+
+            // Actualizar la tabla y el total
+            renderExpenses();
+            updateTotalExpenses();
+        });
+
+        // Aplicar filtros
+        $('#filter-form').on('submit', function(e) {
+            e.preventDefault();
+            let startDate = $('#start-date').val();
+            let endDate = $('#end-date').val();
+            let minAmount = parseFloat($('#min-amount').val());
+            let maxAmount = parseFloat($('#max-amount').val());
+
+            // Filtrar los gastos según los parámetros
+            let filteredExpenses = expenses.filter(expense => {
+                let expenseDate = new Date(expense.date);
+                let start = startDate ? new Date(startDate) : null;
+                let end = endDate ? new Date(endDate) : null;
+
+                return (!start || expenseDate >= start) &&
+                    (!end || expenseDate <= end) &&
+                    (isNaN(minAmount) || expense.amount >= minAmount) &&
+                    (isNaN(maxAmount) || expense.amount <= maxAmount);
+            });
+
+            // Renderizar los gastos filtrados
+            expenses = filteredExpenses;
+            renderExpenses();
+            updateTotalExpenses();
+        });
+
+        // Inicializar la vista con los gastos existentes
+        $(document).ready(function() {
+            renderExpenses();
+            updateTotalExpenses();
+        });
+    </script>
+</body>
+</html>

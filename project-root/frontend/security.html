@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Análisis de Seguridad</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
+</head>
+<body>
+    <div class="container-fluid min-vh-100 py-5">
+        
+        <!-- Título -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="h3">Resultados de Análisis de Seguridad</h1>
+                <p class="lead">Resultados detallados del análisis de seguridad realizado en tu Raspberry Pi.</p>
+            </div>
+        </div>
+
+        <!-- Resumen de Resultados -->
+        <section class="row mb-4">
+            <div class="col-12 col-md-6">
+                <h3 class="h5">Resumen de Resultados</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>Total de Puertos Escaneados:</strong> 25
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Vulnerabilidades Detectadas:</strong> 3
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Estado de Seguridad:</strong> <span class="badge badge-danger">Crítico</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Escaneo de Puertos -->
+        <section class="row mb-4">
+            <div class="col-12">
+                <h3 class="h5">Escaneo de Puertos</h3>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Puerto</th>
+                            <th>Protocolo</th>
+                            <th>Estado</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ports-scan-results">
+                        <!-- Los resultados de los puertos escaneados se mostrarán aquí -->
+                        <tr>
+                            <td>22</td>
+                            <td>SSH</td>
+                            <td><span class="badge badge-warning">Abierto</span></td>
+                            <td>Puerto de acceso remoto SSH.</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>HTTP</td>
+                            <td><span class="badge badge-success">Cerrado</span></td>
+                            <td>Puerto web estándar.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Vulnerabilidades Detectadas -->
+        <section class="row mb-4">
+            <div class="col-12">
+                <h3 class="h5">Vulnerabilidades Detectadas</h3>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Vulnerabilidad</th>
+                            <th>Descripción</th>
+                            <th>Severidad</th>
+                            <th>Recomendación</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vulnerabilities-list">
+                        <!-- Las vulnerabilidades detectadas se mostrarán aquí -->
+                        <tr>
+                            <td>Vulnerabilidad de OpenSSH</td>
+                            <td>Fuga de datos en la configuración del servidor SSH.</td>
+                            <td><span class="badge badge-danger">Alta</span></td>
+                            <td>Actualizar la configuración y cambiar contraseñas.</td>
+                        </tr>
+                        <tr>
+                            <td>Vulnerabilidad HTTP/HTTPS</td>
+                            <td>La versión del servidor web es obsoleta.</td>
+                            <td><span class="badge badge-warning">Media</span></td>
+                            <td>Actualizar el servidor web a la versión más reciente.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Recomendaciones Generales -->
+        <section class="row mb-4">
+            <div class="col-12">
+                <h3 class="h5">Recomendaciones Generales</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Realizar una auditoría de seguridad más detallada en el sistema.</li>
+                    <li class="list-group-item">Actualizar todas las aplicaciones y servicios a sus últimas versiones.</li>
+                    <li class="list-group-item">Configurar un firewall para bloquear puertos no utilizados.</li>
+                    <li class="list-group-item">Revisar y mejorar las contraseñas de acceso a servicios críticos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resumen de Estado de Seguridad -->
+        <section class="row">
+            <div class="col-12">
+                <h3 class="h5">Estado Final de Seguridad</h3>
+                <div class="alert alert-danger" role="alert">
+                    <strong>ALERTA CRÍTICA:</strong> Se han encontrado vulnerabilidades graves en el sistema. Se recomienda actuar de inmediato.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script>
+        // Aquí podemos incluir simulaciones de datos dinámicos, si fueran necesarios para el análisis.
+        $(document).ready(function() {
+            // Llenar los resultados de escaneo de puertos con datos simulados
+            const ports = [
+                { port: 22, protocol: 'SSH', status: 'Abierto', description: 'Puerto de acceso remoto SSH.' },
+                { port: 80, protocol: 'HTTP', status: 'Cerrado', description: 'Puerto web estándar.' },
+                { port: 443, protocol: 'HTTPS', status: 'Abierto', description: 'Puerto seguro para conexiones HTTPS.' }
+            ];
+            const vulnerabilities = [
+                { name: 'Vulnerabilidad de OpenSSH', description: 'Fuga de datos en la configuración del servidor SSH.', severity: 'Alta', recommendation: 'Actualizar la configuración y cambiar contraseñas.' },
+                { name: 'Vulnerabilidad HTTP/HTTPS', description: 'La versión del servidor web es obsoleta.', severity: 'Media', recommendation: 'Actualizar el servidor web a la versión más reciente.' },
+                { name: 'Vulnerabilidad de Contraseñas', description: 'Contraseñas predeterminadas no cambiadas en el dispositivo.', severity: 'Alta', recommendation: 'Cambiar contraseñas predeterminadas.' }
+            ];
+
+            // Renderizar los resultados de escaneo de puertos
+            ports.forEach(port => {
+                $('#ports-scan-results').append(`
+                    <tr>
+                        <td>${port.port}</td>
+                        <td>${port.protocol}</td>
+                        <td><span class="badge ${port.status === 'Abierto' ? 'badge-warning' : 'badge-success'}">${port.status}</span></td>
+                        <td>${port.description}</td>
+                    </tr>
+                `);
+            });
+
+            // Renderizar las vulnerabilidades
+            vulnerabilities.forEach(vul => {
+                $('#vulnerabilities-list').append(`
+                    <tr>
+                        <td>${vul.name}</td>
+                        <td>${vul.description}</td>
+                        <td><span class="badge ${vul.severity === 'Alta' ? 'badge-danger' : 'badge-warning'}">${vul.severity}</span></td>
+                        <td>${vul.recommendation}</td>
+                    </tr>
+                `);
+            });
+        });
+    </script>
+</body>
+</html>
