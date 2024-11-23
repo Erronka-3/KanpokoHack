@@ -1,4 +1,6 @@
 <?php
+// callback.php
+
 include('config.php');
 
 try {
@@ -57,7 +59,7 @@ try {
                 $_SESSION['id_token'] = $idToken;
 
                 // Mostrar el enlace de logout que redirige al archivo logout.php
-                echo "<a href='logout.php'>Cerrar sesión</a>";
+                echo "<a href='logout.php'><button>Cerrar sesión</button></a>";
             } else {
                 echo "<p>Error: el token no parece ser un JWT válido.</p>";
             }
@@ -70,4 +72,5 @@ try {
 } catch (Exception $e) {
     echo "<p>Ocurrió un error inesperado: " . htmlspecialchars($e->getMessage()) . "</p>";
 }
+
 ?>
