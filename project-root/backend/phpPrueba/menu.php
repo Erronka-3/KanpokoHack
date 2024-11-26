@@ -1,3 +1,10 @@
+<?php
+#session_start();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -212,7 +219,7 @@
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="user_update.php" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Users</span>
                     </a>
@@ -234,17 +241,14 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="nav_link">
+            <a href="logout.php" class="nav_link">
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
         </nav>
     </div>
 
-    <div class="height-100 bg-light">
-        <h4>Main Components</h4>
-    </div>
-
+ 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>

@@ -1,3 +1,10 @@
+<?php
+#session_start();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -51,7 +58,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 1rem;
-            background-color: var(--white-color);
+            background-color: rgba(0,0,0,0);
             z-index: var(--z-fixed);
             transition: .5s;
         }
@@ -197,7 +204,7 @@
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+      
     </header>
 
     <div class="l-navbar" id="nav-bar">
@@ -208,11 +215,11 @@
                     <span class="nav_logo-name">BBBootstrap</span>
                 </a>
                 <div class="nav_list">
-                    <a href="#" class="nav_link active">
+                    <a href="dashboard.php" class="nav_link">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="user.php" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Users</span>
                     </a>
@@ -224,60 +231,72 @@
                         <i class='bx bx-bookmark nav_icon'></i>
                         <span class="nav_name">Bookmark</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="cards.php" class="nav_link">
                         <i class='bx bx-folder nav_icon'></i>
                         <span class="nav_name">Files</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="expenses.php" class="nav_link">
                         <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
                         <span class="nav_name">Stats</span>
                     </a>
                 </div>
             </div>
-            <a href="#" class="nav_link">
+            <a href="logout.php" class="nav_link">
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
         </nav>
     </div>
 
-    <div class="height-100 bg-light">
-        <h4>Main Components</h4>
-    </div>
-
+ 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+       // Para que se cargue en el menu 'active' cada apartado
         document.addEventListener("DOMContentLoaded", function(event) {
-            const showNavbar = (toggleId, navId, bodyId, headerId) => {
-                const toggle = document.getElementById(toggleId),
-                      nav = document.getElementById(navId),
-                      bodypd = document.getElementById(bodyId),
-                      headerpd = document.getElementById(headerId);
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+            const toggle = document.getElementById(toggleId),
+                  nav = document.getElementById(navId),
+                  bodypd = document.getElementById(bodyId),
+                  headerpd = document.getElementById(headerId);
 
-                if (toggle && nav && bodypd && headerpd) {
-                    toggle.addEventListener('click', () => {
-                        nav.classList.toggle('show');
-                        toggle.classList.toggle('bx-x');
-                        bodypd.classList.toggle('body-pd');
-                        headerpd.classList.toggle('body-pd');
-                    });
-                }
-            };
-
-            showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
-
-            const linkColor = document.querySelectorAll('.nav_link');
-
-            function colorLink() {
-                if (linkColor) {
-                    linkColor.forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                }
+            if (toggle && nav && bodypd && headerpd) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('show');
+                    toggle.classList.toggle('bx-x');
+                    bodypd.classList.toggle('body-pd');
+                    headerpd.classList.toggle('body-pd');
+                });
             }
+        };
 
-            linkColor.forEach(l => l.addEventListener('click', colorLink));
+        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
+
+        // Obtener la URL actual
+        const currentPage = window.location.pathname.split("/").pop();
+
+        const linkColor = document.querySelectorAll('.nav_link');
+
+        function colorLink() {
+            // Remover la clase active de todos los enlaces
+            linkColor.forEach(l => l.classList.remove('active'));
+
+            // Añadir la clase active al enlace correspondiente
+            if (this.getAttribute("href").includes(currentPage)) {
+                this.classList.add('active');
+            }
+        }
+
+        // Añadir el evento a cada enlace
+        linkColor.forEach(l => l.addEventListener('click', colorLink));
+
+        // Marcar el enlace activo cuando la página cargue
+        linkColor.forEach(link => {
+            if (link.getAttribute("href").includes(currentPage)) {
+                link.classList.add('active');
+            }
         });
+    });
     </script>
 </body>
 </html>
