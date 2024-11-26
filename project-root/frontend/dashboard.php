@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('../backend/phpPrueba/config.php');
 
 // Verificar si hay roles en sesión
 if (!isset($_SESSION['user_roles'])) {
@@ -31,6 +32,8 @@ $isAdmin = in_array('admin', $userRoles);
         <a class="navbar-brand" href="#">Dashboard</a>
         <form class="form-inline">
             <a href="/KanpokoHack/project-root/frontend/logout.php" class="btn btn-outline-danger">Logout</a>
+            <!-- Enlace a cards.php -->
+            <a href="cards.php" class="btn btn-outline-primary ml-2">Ir a Cards</a>
         </form>
     </nav>
 
@@ -92,6 +95,9 @@ $isAdmin = in_array('admin', $userRoles);
                     <button class="btn btn-info mb-2 col-12 col-md-5 col-lg-2 mx-1">Configuración</button>
                     <button class="btn btn-dark mb-2 col-12 col-md-5 col-lg-2 mx-1">Soporte</button>
 
+                    <!-- Enlace visible para todos los usuarios -->
+                    <a href="users.php" class="btn btn-warning mb-2 col-12 col-md-5 col-lg-2 mx-1">Modificar mi cuenta</a> <!-- Enlace a la página de modificar usuario -->
+
                     <!-- Mostrar el botón de Administrador solo si el rol es Admin -->
                     <?php if ($isAdmin): ?>
                         <div class="dropdown mb-2 col-12 col-md-5 col-lg-2 mx-1">
@@ -99,7 +105,7 @@ $isAdmin = in_array('admin', $userRoles);
                                 Administrador
                             </button>
                             <div class="dropdown-menu" aria-labelledby="adminDropdown">
-                                <a class="dropdown-item" href="#">Gestión de Usuarios</a>
+                                <a class="dropdown-item" href="admin_users.php">Gestión de Usuarios</a> <!-- Enlace a la página de administración de usuarios -->
                                 <a class="dropdown-item" href="#">Configuración del Sistema</a>
                                 <a class="dropdown-item" href="#">Revisión de Seguridad</a>
                             </div>

@@ -34,6 +34,20 @@ try {
     $roles = $decodedToken['payload']['resource_access']['public_client']['roles'] ?? [];
     $_SESSION['user_roles'] = $roles;
 
+    // Extraer el email desde el token y guardarlo en la sesión
+    if (isset($decodedToken['payload']['email'])) {
+        $_SESSION['user_email'] = $decodedToken['payload']['email'];
+    } else {
+        $_SESSION['user_email'] = ''; // Si no hay email, guardar vacío
+    }
+
+    // Extraer el nombre desde el token y guardarlo en la sesión
+    if (isset($decodedToken['payload']['preferred_username'])) {
+        $_SESSION['user_name'] = $decodedToken['payload']['preferred_username'];
+    } else {
+        $_SESSION['user_name'] = ''; // Si no hay nombre, guardar vacío
+    }
+
     // Redirigir al dashboard
     header("Location: /KanpokoHack/project-root/frontend/dashboard.php");
     exit();
@@ -41,4 +55,3 @@ try {
     echo "Error al decodificar el token: " . $e->getMessage();
     exit();
 }
-
