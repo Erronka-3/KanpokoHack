@@ -1,10 +1,8 @@
 <?php
- session_start();
 include 'menu.php';
 include('config.php');
 
 try {
-   
     // Verificar si Keycloak ha enviado el código de autorización
     if (isset($_GET['code'])) {
         $authCode = $_GET['code'];
@@ -19,7 +17,6 @@ try {
             'client_secret' => CLIENT_SECRET
         ];
 
-        
         // Configurar y ejecutar cURL para obtener el token
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $tokenUrl);
@@ -49,14 +46,11 @@ try {
                 displayUserName($decodedPayload);
 
                 // Guardar el nombre y preferred_username en la sesión
-                
+                session_start();
                 $_SESSION['access_token'] = $accessToken;
                 $_SESSION['name'] = $decodedPayload['name']; // Nombre del usuario
                 $_SESSION['preferred_username'] = $decodedPayload['preferred_username']; // Nombre de usuario preferido
-                $_SESSION['user_id'] = $decodedPayload['sub'];
-                $_SESSION['first_name'] = $decodedPayload['given_name'] ?? null;
-                $_SESSION['last_name'] = $decodedPayload['family_name'] ?? null;
-                $_SESSION['email'] = $decodedPayload['email'] ?? null;
+
                 // Mostrar la información completa del usuario
                 echo "<h1>Información del Usuario</h1>";
                 echo "<pre>" . json_encode($decodedPayload, JSON_PRETTY_PRINT) . "</pre>";

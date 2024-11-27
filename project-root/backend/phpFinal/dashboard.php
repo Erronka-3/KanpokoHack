@@ -1,20 +1,21 @@
 <?php
 session_start();
-include('../backend/phpPrueba/config.php');
-
+include 'menu.php';
+include('config.php');
+ 
 // Verificar si hay roles en sesión
 if (!isset($_SESSION['user_roles'])) {
     echo "No se pudo determinar el rol del usuario. Por favor, inicie sesión.";
     exit();
 }
-
+ 
 // Obtener roles
 $userRoles = $_SESSION['user_roles'];
-
+ 
 // Verificar si el usuario tiene el rol "admin"
 $isAdmin = in_array('admin', $userRoles);
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,20 +27,11 @@ $isAdmin = in_array('admin', $userRoles);
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
 </head>
 <body>
-
-    <!-- Botón de logout -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dashboard</a>
-        <form class="form-inline">
-            <a href="/KanpokoHack/project-root/frontend/logout.php" class="btn btn-outline-danger">Logout</a>
-            <!-- Enlace a cards.php -->
-            <a href="cards.php" class="btn btn-outline-primary ml-2">Ir a Cards</a>
-        </form>
-    </nav>
+ 
 
     <!-- Contenedor principal -->
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center py-3">
-        
+       
         <!-- Cabecera de bienvenida -->
         <header class="row mb-4">
             <div class="col-12 text-center">
@@ -47,7 +39,7 @@ $isAdmin = in_array('admin', $userRoles);
                 <p class="lead">Rol: <strong id="user-role"><?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?></strong></p>
             </div>
         </header>
-
+ 
         <!-- Sección de Resumen con tarjetas -->
         <section class="row mb-4">
             <div class="col-12 col-sm-6 col-lg-4 mb-3">
@@ -84,7 +76,7 @@ $isAdmin = in_array('admin', $userRoles);
                 </div>
             </div>
         </section>
-
+ 
         <!-- Sección de Accesos Rápidos -->
         <section class="row mb-4">
             <div class="col-12">
@@ -94,10 +86,10 @@ $isAdmin = in_array('admin', $userRoles);
                     <button class="btn btn-secondary mb-2 col-12 col-md-5 col-lg-2 mx-1">Reportes</button>
                     <button class="btn btn-info mb-2 col-12 col-md-5 col-lg-2 mx-1">Configuración</button>
                     <button class="btn btn-dark mb-2 col-12 col-md-5 col-lg-2 mx-1">Soporte</button>
-
+ 
                     <!-- Enlace visible para todos los usuarios -->
-                    <a href="users.php" class="btn btn-warning mb-2 col-12 col-md-5 col-lg-2 mx-1">Modificar mi cuenta</a> <!-- Enlace a la página de modificar usuario -->
-
+                    <a href="user.php" class="btn btn-warning mb-2 col-12 col-md-5 col-lg-2 mx-1">Modificar mi cuenta</a> <!-- Enlace a la página de modificar usuario -->
+ 
                     <!-- Mostrar el botón de Administrador solo si el rol es Admin -->
                     <?php if ($isAdmin): ?>
                         <div class="dropdown mb-2 col-12 col-md-5 col-lg-2 mx-1">
@@ -114,12 +106,12 @@ $isAdmin = in_array('admin', $userRoles);
                 </div>
             </div>
         </section>
-
+ 
         <!-- Vista Personalizada según Rol -->
         <section class="row">
             <div class="col-12">
                 <h2 class="h5 mb-3">Información de <span id="role-specific"><?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?></span></h2>
-                
+               
                 <!-- Información específica para el Administrador -->
                 <?php if ($isAdmin): ?>
                     <div id="admin-section" style="display: none;">
@@ -131,7 +123,7 @@ $isAdmin = in_array('admin', $userRoles);
                         </ul>
                     </div>
                 <?php endif; ?>
-                
+               
                 <!-- Información para usuarios no admins -->
                 <?php if (!$isAdmin): ?>
                     <div id="user-section">
@@ -141,7 +133,7 @@ $isAdmin = in_array('admin', $userRoles);
             </div>
         </section>
     </div>
-
+ 
     <!-- JS de Bootstrap y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
