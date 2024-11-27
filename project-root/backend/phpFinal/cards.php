@@ -30,7 +30,7 @@ function decryptData($encryptedData) {
 }
 
 // Hacer la solicitud a la API para obtener la información encriptada
-$apiUrl = 'http://10.11.0.34/infocards1/' . $username;
+$apiUrl = 'http://localhost:4000/infocards1/' . $username;
 $response = file_get_contents($apiUrl);
 
 if ($response === false) {
@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $card_type = $_POST['card_type']; // Tipo de tarjeta (DEBIT o CREDIT)
         
         // Realizar la solicitud a la API para activar/desactivar la tarjeta seleccionada
-        $apiUrl = "http://10.11.0.34/enablecard1/{$username}/{$card_type}";
+        $apiUrl = "http://localhost:4000/enablecard1/{$username}/{$card_type}";
         $ch = curl_init($apiUrl);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $apiResponse = curl_exec($ch);
@@ -124,6 +124,56 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Gestión de Tarjetas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+<style>
+.card-selectable {
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    background-size: contain; /* Asegura que la imagen se ajuste al tamaño del div */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;  /* Ajusta el div al tamaño del contenedor, puedes cambiarlo si prefieres un tamaño fijo */
+    height: auto;  /* El alto se ajusta según la imagen */
+}
+
+#debit-card {
+    background-image: url('Debito.png');
+    height: 250px; /* Ajusta la altura según el tamaño de la imagen */
+}
+
+#credit-card {
+    background-image: url('Credito.png');
+    height: 250px; /* Ajusta la altura según el tamaño de la imagen */
+}
+
+.card-selectable.active {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco trasparente */
+    border-color: #28a745;  /* Borde verde */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5); /* Sombra verde */
+}
+
+.card-selectable:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el número de tarjeta alineado a la derecha */
+.card-body {
+    position: absolute;
+    bottom: 20px; /* Ajuste la posición del contenido hacia la parte inferior */
+    left: 10px; /* Espacio desde la izquierda */
+    right: 10px; /* Espacio desde la derecha */
+    text-align: right; /* Alineación del texto a la derecha */
+}
+
+.card-body .card-text {
+    font-size: 1.2rem; /* Tamaño de fuente más grande si lo prefieres */
+    font-weight: bold; /* Negrita */
+}
+
+    </style>
 </head>
 <body>
 
@@ -154,25 +204,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </section>
 
-        
-        <section class="row mb-4">
-    <div class="col-12 col-md-6 col-lg-4 mx-auto">
-        <h3 class="h5">Activar o Desactivar Tarjeta</h3>
-        <form method="POST">
-            <div class="form-group">
-                <label for="card-type">Selecciona tipo de tarjeta</label>
-                <select class="form-control" name="card_type" id="card-type" required>
-                    <!-- Si la tarjeta activa es Débito o Crédito, seleccionar automáticamente -->
-                    <option value="DEBIT" <?php echo ($currentCard === 'DEBIT') ? 'selected' : ''; ?>>Débito</option>
-                    <option value="CREDIT" <?php echo ($currentCard === 'CREDIT') ? 'selected' : ''; ?>>Crédito</option>
-                </select>
-            </div>
-            <button type="submit" name="enable_cards" class="btn btn-warning w-100">
-                <?php echo ($currentCard === 'DEBIT' || $currentCard === 'CREDIT') ? 'Desactivar' : 'Activar'; ?> Tarjeta
-            </button>
-        </form>
+        <section class="row mb-4 justify-content-center">
+            <div class="card-deck col-md-8">
+     <!-- Tarjeta de Débito -->
+<div class="card card-selectable" id="debit-card" data-card-type="DEBIT">
+    <div class="card-body">
+        <h5 class="card-title">Tarjeta Débito</h5>
+        <p class="card-text"><?php echo htmlspecialchars($cards[0]['number']); ?></p>
     </div>
-</section>
+</div>
+
+<!-- Tarjeta de Crédito -->
+<div class="card card-selectable" id="credit-card" data-card-type="CREDIT">
+    <div class="card-body">
+        <h5 class="card-title">Tarjeta Crédito</h5>
+        <p class="card-text"><?php echo htmlspecialchars($cards[1]['number']); ?></p>
+    </div>
+</div>
+    </section>
+
+      
+
+
 
         <?php if (isset($message) && $message): ?>
             <div class="alert alert-warning text-center"><?php echo htmlspecialchars($message); ?></div>
@@ -227,6 +280,77 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     document.getElementById('card-info').classList.add('d-none');
                 }
             });
+
+        
+
+            document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card-selectable');
+    let activeCard = '<?php echo $currentCard; ?>'; // Tarjeta activa actual (DEBIT o CREDIT)
+
+    // Marcar visualmente la tarjeta activa al cargar
+    if (activeCard === 'DEBIT') {
+        document.getElementById('debit-card').classList.add('active');
+    } else if (activeCard === 'CREDIT') {
+        document.getElementById('credit-card').classList.add('active');
+    }
+
+    // Evento de selección de tarjetas
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const cardType = card.dataset.cardType;
+
+            // Verificar si la tarjeta seleccionada ya está activa
+            if (activeCard === cardType) {
+                alert(`La tarjeta ${cardType} ya está activa.`);
+                return; // Salir sin hacer nada
+            }
+
+            // Realizar la solicitud para activar la nueva tarjeta
+            fetch(`http://localhost:4000/enablecard1/<?php echo $username; ?>/${cardType}`, {
+    method: 'GET'
+})
+.then(response => response.json())  // Asegúrate de que la respuesta esté en formato JSON
+.then(data => {
+    console.log(data);  // Agregar este log para depuración
+    
+       // alert(`Tarjeta ${cardType} activada correctamente.`);
+        activeCard = cardType; // Actualizar el estado activo
+        updateCardVisuals(card); // Actualizar visualmente
+        updateCardStatusInTable(cardType); // Actualizar estado en la tabla
+   
+})
+
+        });
+    });
+
+    // Función para actualizar la visualización de tarjetas activas
+    function updateCardVisuals(selectedCard) {
+        cards.forEach(card => card.classList.remove('active')); // Quitar la clase activa de todas las tarjetas
+        selectedCard.classList.add('active'); // Activar la tarjeta seleccionada
+  
+    }
+
+     // Función para actualizar el estado de la tarjeta en la tabla
+     function updateCardStatusInTable(cardType) {
+        const statusColumn = document.querySelectorAll('table tbody tr');
+        statusColumn.forEach(row => {
+            const cardNumber = row.cells[0].textContent.trim();
+            if (cardNumber === "<?php echo $cards[0]['number']; ?>") {  // Tarjeta Débito
+                row.cells[1].textContent = (cardType === 'DEBIT') ? 'Activo' : 'Inactivo';
+            }
+            if (cardNumber === "<?php echo $cards[1]['number']; ?>") {  // Tarjeta Crédito
+                row.cells[1].textContent = (cardType === 'CREDIT') ? 'Activo' : 'Inactivo';
+            }
+        });
+    }
+
+   
+});
+
+
+   
+
+
         </script>
     </div>
 </body>

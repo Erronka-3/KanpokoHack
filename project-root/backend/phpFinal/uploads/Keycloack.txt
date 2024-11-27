@@ -1,0 +1,8 @@
+CREATE DATABASE keycloakdb;
+CREATE USER keycloakuser WITH ENCRYPTED PASSWORD 'KanpokoHack';
+GRANT ALL PRIVILEGES ON DATABASE keycloakdb TO keycloakuser;
+\q
+
+export KEYCLOAK_ADMIN=admin
+export KEYCLOAK_ADMIN_PASSWORD=KanpokoHack
+
