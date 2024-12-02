@@ -1,0 +1,118 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 51, 102, 0.8); /* Fondo azul sólido con transparencia */
+    overflow: hidden;
+    position: relative; /* Para las pompas */
+}
+
+.logo {
+    position: absolute; /* Posiciona el logo de manera absoluta */
+    top: 20px; /* Ajusta la posición vertical */
+    left: 20px; /* Ajusta la posición horizontal */
+    width: 150px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+#fechaHora {
+    position: absolute; /* Posiciona la fecha y hora de manera absoluta */
+    top: 40px; /* Ajusta la posición vertical */
+    right: 30px; /* Ajusta la posición horizontal */
+    font-size: 28px;    
+    color: #fbfcfd;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.5); /* Fondo difuminado del contenedor */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%; /* Cambiado a 90% para ser más flexible */
+    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    position: relative; /* Para la posición relativa */
+    z-index: 1; /* Asegurarse de que esté por delante de las pompas */
+}
+
+.login-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    color: #66ccff; /* Color del texto informativo */
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-container input[type="submit"] {
+    background-color: #66ccff;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #55b3e6;
+}
+
+/* Pompas */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    animation: bubble-animation 5s infinite;
+}
+
+@keyframes bubble-animation {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .logo {
+        width: 120px; /* Ajustar el tamaño del logo en pantallas pequeñas */
+    }
+
+    #fechaHora {
+        font-size: 20px; /* Reducir el tamaño de la fuente para la fecha y hora */
+        right: 10px; /* Ajustar la posición horizontal */
+    }
+
+    .login-container {
+        width: 95%; /* Aumentar el ancho en pantallas pequeñas */
+        padding: 15px; /* Reducir el padding */
+    }
+
+    .login-container h2 {
+        font-size: 18px; /* Ajustar el tamaño de la fuente */
+    }
+
+    .login-container p {
+        font-size: 12px; /* Ajustar el tamaño de la fuente */
+    }
+
+    .login-container input {
+        width: 90%; /* Aumentar el ancho de los inputs */
+    }
+}
