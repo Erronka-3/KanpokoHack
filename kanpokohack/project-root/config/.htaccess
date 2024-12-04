@@ -1,0 +1,48 @@
+# Bloquear acceso general a la carpeta app
+<Files "*">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Permitir el acceso a callback.php (para la redirección de Keycloak)
+<Files "callback.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "dashboard.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "logout.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "index.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "profile.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "expenses.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "register_expense.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "get_expenses.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "delete_expense.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "cards.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
