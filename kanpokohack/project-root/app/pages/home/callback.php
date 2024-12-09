@@ -72,7 +72,7 @@ if ($responseCode === 200) {
         $_SESSION['has_manage_account'] = in_array('manage-account', $accountRoles);
 
         // Redirigir al dashboard
-        header("Location: dashboard.php");
+        header("Location: ../../../public/index.php?route=1");
         exit();
     } else {
         echo "Error al obtener la información del usuario.";

@@ -214,16 +214,16 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="dashboard.php" class="nav_logo">
+                <a href="index.php?route=1" class="nav_logo">
                     <i class='bx bx-layer nav_logo-icon'></i>
                     <span class="nav_logo-name">KanpokoHack</span>
                 </a>
                 <div class="nav_list">
-                    <a href="dashboard.php" class="nav_link">
+                    <a href="index.php?route=1" class="nav_link">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="../user/profile.php" class="nav_link">
+                    <a href="index.php?route=2" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Profile</span>
                     </a>
@@ -235,17 +235,17 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
                         <i class='bx bx-bookmark nav_icon'></i>
                         <span class="nav_name">Bookmark</span>
                     </a>
-                    <a href="../cards/cards.php" class="nav_link">
+                    <a href="index.php?route=3" class="nav_link">
                         <i class='bx bx-folder nav_icon'></i>
                         <span class="nav_name">Files</span>
                     </a>
-                    <a href="../expense/expenses.php" class="nav_link">
+                    <a href="index.php?route=4" class="nav_link">
                         <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
                         <span class="nav_name">Stats</span>
                     </a>
                 </div>
             </div>
-            <a href="../home/logout.php" class="nav_link">
+            <a href="index.php?route=6" class="nav_link">
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
@@ -257,49 +257,59 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
     <script>
     // Para que se cargue en el menu 'active' cada apartado
     document.addEventListener("DOMContentLoaded", function(event) {
-        const showNavbar = (toggleId, navId, bodyId, headerId) => {
-            const toggle = document.getElementById(toggleId),
-                nav = document.getElementById(navId),
-                bodypd = document.getElementById(bodyId),
-                headerpd = document.getElementById(headerId);
+    // Función para manejar la visibilidad del menú lateral
+    const showNavbar = (toggleId, navId, bodyId, headerId) => {
+        const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.getElementById(bodyId),
+            headerpd = document.getElementById(headerId);
 
-            if (toggle && nav && bodypd && headerpd) {
-                toggle.addEventListener('click', () => {
-                    nav.classList.toggle('show');
-                    toggle.classList.toggle('bx-x');
-                    bodypd.classList.toggle('body-pd');
-                    headerpd.classList.toggle('body-pd');
-                });
-            }
-        };
-
-        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
-
-        // Obtener la URL actual
-        const currentPage = window.location.pathname.split("/").pop();
-
-        const linkColor = document.querySelectorAll('.nav_link');
-
-        function colorLink() {
-            // Remover la clase active de todos los enlaces
-            linkColor.forEach(l => l.classList.remove('active'));
-
-            // Añadir la clase active al enlace correspondiente
-            if (this.getAttribute("href").includes(currentPage)) {
-                this.classList.add('active');
-            }
+        if (toggle && nav && bodypd && headerpd) {
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('show');
+                toggle.classList.toggle('bx-x');
+                bodypd.classList.toggle('body-pd');
+                headerpd.classList.toggle('body-pd');
+            });
         }
+    };
 
-        // Añadir el evento a cada enlace
-        linkColor.forEach(l => l.addEventListener('click', colorLink));
+    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
 
-        // Marcar el enlace activo cuando la página cargue
-        linkColor.forEach(link => {
-            if (link.getAttribute("href").includes(currentPage)) {
-                link.classList.add('active');
-            }
-        });
+    // Obtener el parámetro 'route' de la URL actual
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentRoute = urlParams.get('route'); // Obtener el valor de 'route'
+
+    const linkColor = document.querySelectorAll('.nav_link');
+
+    // Función para aplicar la clase 'active' al enlace correspondiente
+    function colorLink() {
+        linkColor.forEach(l => l.classList.remove('active')); // Remover clase 'active' de todos los enlaces
+
+        // Obtener el valor del parámetro 'route' del enlace
+        const linkRoute = new URLSearchParams(l.getAttribute("href").split('?')[1]).get('route');
+
+        // Añadir la clase 'active' si coincide el valor de 'route'
+        if (linkRoute === currentRoute) {
+            l.classList.add('active');
+        }
+    }
+
+    // Añadir el evento de clic a cada enlace
+    linkColor.forEach(l => l.addEventListener('click', colorLink));
+
+    // Marcar el enlace activo al cargar la página
+    linkColor.forEach(link => {
+        // Obtener el valor del parámetro 'route' del enlace
+        const linkRoute = new URLSearchParams(link.getAttribute("href").split('?')[1]).get('route');
+
+        // Comparar el parámetro 'route'
+        if (linkRoute === currentRoute) {
+            link.classList.add('active'); // Marcar como activo el enlace correspondiente
+        }
     });
+});
+
     </script>
 </body>
 

@@ -4,11 +4,15 @@ ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
 session_start();
-include '../menu/menu.php';
+
+
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION['access_token'])) {
-    die("<div class='alert alert-danger text-center'>No estás autenticado.</div>");
+    // die("<div class='alert alert-danger text-center'>No estás autenticado.</div>");
+    header("Location: index.php?route=6");
 }
+
+include '../app/pages/menu/menu.php';
 ?>
 
 <!DOCTYPE html>
@@ -98,29 +102,29 @@ if (!isset($_SESSION['access_token'])) {
     <script>
     // Cargar los gastos desde el servidor
     function loadExpenses() {
-        $.get('get_expenses.php', function(data) {
-            let expenses = JSON.parse(data);
-            let expensesList = $('#expenses-list');
-            expensesList.empty(); // Limpiar la tabla antes de renderizar
+    $.get('index.php?route=7', function(data) {
+        let expenses = JSON.parse(data);
+        let expensesList = $('#expenses-list');
+        expensesList.empty(); // Limpiar la tabla antes de renderizar
 
-            expenses.forEach(expense => {
-                console.log(expense);
-                expensesList.append(`
-                        <tr>
-                            <td>${expense.fecha}</td>
-                            <td>${expense.descripcion}</td>
-                            <td>$${expense.importe}</td>
-                            <td><a href="storage/${expense.ticket}" class="btn btn-info btn-sm" target="_blank">Ver Ticket</a></td>
-                            <td><button class="btn btn-danger btn-sm" onclick="deleteExpense(${expense.id})"><i class="fas fa-trash"></i></button></td>
-                            </tr>
-                    `);
-            });
-
-            // Actualizar el total
-            let total = expenses.reduce((acc, expense) => acc + parseFloat(expense.importe), 0);
-            $('#total-expenses').text('$' + total.toFixed(2));
+        expenses.forEach(expense => {
+            console.log(expense);
+            expensesList.append(`
+                <tr>
+                    <td>${expense.fecha}</td>
+                    <td>${expense.descripcion}</td>
+                    <td>$${expense.importe}</td>
+                    <td><a href="../app/pages/expense/storage/${expense.usuario}/${expense.ticket}" class="btn btn-info btn-sm" target="_blank">Ver Ticket</a></td>
+                    <td><button class="btn btn-danger btn-sm" onclick="deleteExpense(${expense.id})"><i class="fas fa-trash"></i></button></td>
+                </tr>
+            `);
         });
-    }
+
+        // Actualizar el total
+        let total = expenses.reduce((acc, expense) => acc + parseFloat(expense.importe), 0);
+        $('#total-expenses').text('$' + total.toFixed(2));
+    });
+}
 
     // Manejo del formulario de registro
     $('#expense-form').on('submit', function(e) {
@@ -128,7 +132,7 @@ if (!isset($_SESSION['access_token'])) {
         let formData = new FormData(this);
 
         $.ajax({
-            url: 'register_expense.php',
+            url: 'index.php?route=9',
             type: 'POST',
             data: formData,
             processData: false,
@@ -153,7 +157,7 @@ if (!isset($_SESSION['access_token'])) {
     function deleteExpense(expenseId) {
         if (confirm('¿Estás seguro de que deseas eliminar este gasto?')) {
             $.ajax({
-                url: 'delete_expense.php',
+                url: 'index.php?route=8',
                 type: 'POST',
                 data: {
                     id: expenseId
@@ -182,7 +186,7 @@ if (!isset($_SESSION['access_token'])) {
             let formData = new FormData(this);
 
             $.ajax({
-                url: 'register_expense.php',
+                url: 'index.php?route=9',
                 type: 'POST',
                 data: formData,
                 processData: false,

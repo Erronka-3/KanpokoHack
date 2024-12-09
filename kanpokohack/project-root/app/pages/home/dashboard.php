@@ -14,14 +14,11 @@ include(__DIR__ . '/../../../config/config.php');
 // }
 // Comprobar si hay un token de autenticación en la sesión
 if (!isset($_SESSION['user_roles'])) {
-    // Si no hay token o el rol no es admin, destruir la sesión y redirigir al login
-    session_unset();  // Elimina todas las variables de sesión
-    session_destroy(); // Destruye la sesión
-    
-    header('Location: kanpokohack/project-root/app/home/callback.php'); // Redirige al login
+    header("Location: index.php?route=6");
     exit;
+    
 }
-include '../menu/menu.php';
+include '../app/pages/menu/menu.php';
  
 // Obtener roles
 $userRoles = $_SESSION['user_roles'];

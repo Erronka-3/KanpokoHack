@@ -7,12 +7,11 @@ session_start();
  
 include(__DIR__ . '/../../../config/config.php');
 
-// Verificar si hay un token disponible en la sesión
-if (!isset($_SESSION['access_token'])) {
-    echo "No hay token en la sesión. Por favor, inicia sesión.";
-    exit();
+if (!isset($_SESSION['user_roles'])) {
+    header("Location: index.php?route=6");
+    exit;
 }
-include '../menu/menu.php';
+include '../app/pages/menu/menu.php';
 // Función para obtener un token de administrador
 function getAdminToken() {
     $tokenUrl = KEYCLOAK_URL . "/realms/" . REALM . "/protocol/openid-connect/token";
@@ -353,7 +352,7 @@ h2 {
 document.getElementById("messageContainer").style.display = "flex";
 // Redirigir después de 2 segundos si la actualización fue exitosa
 setTimeout(function() {
-    window.location.href = "profile.php"; // Cambia a la URL de destino
+    window.location.href = "index.php?route=2"; // Cambia a la URL de destino
 }, 2000);
 <?php endif; ?>
 </script>

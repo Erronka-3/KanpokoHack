@@ -4,12 +4,17 @@ ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
 // Iniciar la sesión
 session_start();
-include '../menu/menu.php';
-// Verificar si el usuario está autenticado
-if (!isset($_SESSION['access_token'])) {
-    die("<div class='alert alert-danger text-center'>No estás autenticado.</div>");
-}
 
+// Verificar si el usuario está autenticado
+// if (!isset($_SESSION['access_token'])) {
+//     die("<div class='alert alert-danger text-center'>No estás autenticado.</div>");
+// }
+// Comprobar si hay un token de autenticación en la sesión
+if (!isset($_SESSION['user_roles'])) {
+    header("Location: index.php?route=6");
+    exit;
+}
+include '../app/pages/menu/menu.php';
 // Obtener el nombre de usuario desde la sesión o desde la URL (GET)
 $username = $_SESSION['preferred_username'] ?? 'Usuario desconocido'; // Si no está definido, mostrar un valor por defecto
 

@@ -1,1 +1,1 @@
-[02-Dec-2024 12:34:58 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost:4000/infocards1/user1): Failed to open stream: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\KanpokoHack\kanpokohack\project-root\app\pages\cards\cards.php on line 38
+[09-Dec-2024 16:35:39 Europe/Berlin] [{"id":20,"fecha":"2024-12-19","descripcion":"hfhx","importe":"124.00","ticket":"ca-cert.pem","usuario":"33c89f31-a44f-4c9d-9b25-5dd5714535e8"}]
