@@ -1,0 +1,594 @@
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 400 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 62
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3462
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3550
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3550
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3550
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3550
+< 
+* Connection #1 to host 192.168.101.133 left intact
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+* unable to set private key file: 'C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\tls\cert.pem' type PEM
+* Closing connection
+* Hostname 192.168.101.133 was found in DNS cache
+*   Trying 192.168.101.133:8081...
+* Connected to 192.168.101.133 (192.168.101.133) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\RETO3_GRUPO\project-root\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  start date: Dec  9 09:49:40 2024 GMT
+*  expire date: Dec  9 09:49:40 2025 GMT
+*  subjectAltName: host "192.168.101.133" matched cert's IP address!
+*  issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd; CN=192.168.101.133
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.101.133:8081/realms/ldap/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.101.133:8081]
+* [HTTP/2] [1] [:path: /realms/ldap/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 332]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/ldap/protocol/openid-connect/token HTTP/2
+Host: 192.168.101.133:8081
+Accept: */*
+Content-Length: 332
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3550
+< 
+* Connection #1 to host 192.168.101.133 left intact
