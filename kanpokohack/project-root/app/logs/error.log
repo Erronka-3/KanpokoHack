@@ -1,1 +1,45 @@
 [09-Dec-2024 16:35:39 Europe/Berlin] [{"id":20,"fecha":"2024-12-19","descripcion":"hfhx","importe":"124.00","ticket":"ca-cert.pem","usuario":"33c89f31-a44f-4c9d-9b25-5dd5714535e8"}]
+[10-Dec-2024 10:41:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function ccurl_setopt() in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\home\callback.php:36
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\home\callback.php on line 36
+[10-Dec-2024 10:47:15 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost:4000/infocards1/betxe): Failed to open stream: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\cards\cards.php on line 43
+[10-Dec-2024 10:47:17 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\db\db.php:18
+Stack trace:
+#0 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\expense\get_expenses.php(5): include()
+#1 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\route.php(20): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\config\db\db.php on line 18
+[10-Dec-2024 10:53:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function url_setopt() in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php:111
+Stack trace:
+#0 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php(155): getUserData('71553de0-783f-4...', 'eyJhbGciOiJSUzI...')
+#1 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\route.php(20): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\public\index.php(11): route('2')
+#3 {main}
+  thrown in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php on line 111
+[10-Dec-2024 10:53:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function url_setopt() in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php:111
+Stack trace:
+#0 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php(155): getUserData('71553de0-783f-4...', 'eyJhbGciOiJSUzI...')
+#1 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\route.php(20): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\public\index.php(11): route('2')
+#3 {main}
+  thrown in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php on line 111
+[10-Dec-2024 10:53:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function url_setopt() in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php:111
+Stack trace:
+#0 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php(155): getUserData('71553de0-783f-4...', 'eyJhbGciOiJSUzI...')
+#1 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\route.php(20): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\public\index.php(11): route('2')
+#3 {main}
+  thrown in C:\xampp\htdocs\RETO3_GRUPO\kanpokohack\project-root\app\pages\user\profile.php on line 111
+[10-Dec-2024 13:17:02 Europe/Berlin] []
+[10-Dec-2024 13:17:14 Europe/Berlin] []
+[10-Dec-2024 13:17:41 Europe/Berlin] []
+[10-Dec-2024 13:24:50 Europe/Berlin] []
+[10-Dec-2024 13:25:08 Europe/Berlin] []
+[10-Dec-2024 13:25:27 Europe/Berlin] [{"id":36,"fecha":"2024-12-13","descripcion":"123","importe":"123.00","ticket":"cacert.pem","usuario":"cfd06f3f-a86d-486c-967e-20b4d2b24f8d"}]
+[10-Dec-2024 13:31:28 Europe/Berlin] [{"id":36,"fecha":"2024-12-13","descripcion":"123","importe":"123.00","ticket":"cacert.pem","usuario":"cfd06f3f-a86d-486c-967e-20b4d2b24f8d"}]
+[10-Dec-2024 13:41:00 Europe/Berlin] [{"id":36,"fecha":"2024-12-13","descripcion":"123","importe":"123.00","ticket":"cacert.pem","usuario":"cfd06f3f-a86d-486c-967e-20b4d2b24f8d"}]
+[10-Dec-2024 13:41:25 Europe/Berlin] [{"id":36,"fecha":"2024-12-13","descripcion":"123","importe":"123.00","ticket":"cacert.pem","usuario":"cfd06f3f-a86d-486c-967e-20b4d2b24f8d"}]
+[10-Dec-2024 13:41:29 Europe/Berlin] []
+[10-Dec-2024 13:41:36 Europe/Berlin] [{"id":36,"fecha":"2024-12-13","descripcion":"123","importe":"123.00","ticket":"cacert.pem","usuario":"cfd06f3f-a86d-486c-967e-20b4d2b24f8d"}]

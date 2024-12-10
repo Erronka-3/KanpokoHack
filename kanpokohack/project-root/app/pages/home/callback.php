@@ -32,6 +32,24 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postData));
 $response = curl_exec($ch);
 $responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
+// Rutas de los certificados
+curl_setopt($ch, CURLOPT_SSLCERT, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cert.pem'); // Certificado del cliente
+curl_setopt($ch, CURLOPT_SSLKEY, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\key.pem'); // Clave privada del cliente
+curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem'); // Certificado de la autoridad
+
+// Verificación de los certificados SSL
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Verifica el certificado del servidor
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);    // Verifica el nombre del host del servidor
+
+// Activar log de cURL
+$logFile = 'curl_log.txt';
+$fp = fopen($logFile, 'a');  // Abrir el archivo de log
+curl_setopt($ch, CURLOPT_VERBOSE, true);  // Habilitar verbosidad
+curl_setopt($ch, CURLOPT_STDERR, $fp);   // Redirigir el log a un archivo
+
+// Realizar la solicitud
+$response = curl_exec($ch);
+$responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 // Verificar si la solicitud fue exitosa
 if ($responseCode === 200) {
@@ -46,10 +64,18 @@ if ($responseCode === 200) {
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Authorization: Bearer ' . $tokenData['access_token']
     ]);
-    $userInfoResponse = curl_exec($ch);
-    curl_close($ch);
+    curl_setopt($ch, CURLOPT_SSLCERT, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cert.pem'); // Certificado del cliente
+    curl_setopt($ch, CURLOPT_SSLKEY, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\key.pem'); // Clave privada del cliente
+    curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem'); // Certificado de la autoridad
 
-    if ($userInfoResponse) {
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Verifica el certificado del servidor
+    
+    $userInfoResponse = curl_exec($ch);
+    $userInfoResponseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    fclose($fp);
+    if ($userInfoResponseCode === 200) {
         $userInfo = json_decode($userInfoResponse, true);
         
         // Almacenar la información del usuario en la sesión

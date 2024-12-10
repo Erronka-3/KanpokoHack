@@ -46,7 +46,7 @@ $isAdmin = in_array('admin', $userRoles);
         <!-- Cabecera de bienvenida -->
         <header class="row mb-4">
             <div class="col-12 text-center">
-                <h1 class="h3">Bienvenido, <span id="user-name">Usuario</span></h1>
+                <h1 class="h3">Bienvenido, <span id="user-name"><?php echo  $_SESSION['name']; ?></span></h1>
                 <p class="lead">Rol: <strong id="user-role"><?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?></strong></p>
             </div>
         </header>

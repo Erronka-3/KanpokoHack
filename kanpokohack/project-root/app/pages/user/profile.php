@@ -26,6 +26,12 @@ function getAdminToken() {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postData));
+    curl_setopt($ch, CURLOPT_SSLCERT, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cert.pem'); // Certificado del cliente
+    curl_setopt($ch, CURLOPT_SSLKEY, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\key.pem'); // Clave privada del cliente
+    curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem'); // Certificado de la autoridad
+
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Verifica el certificado del servidor
     $response = curl_exec($ch);
     $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
@@ -61,6 +67,12 @@ function getLastLogin($userId, $adminToken) {
     $ch = curl_init($url . "?" . $queryParams);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_SSLCERT, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cert.pem'); // Certificado del cliente
+    curl_setopt($ch, CURLOPT_SSLKEY, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\key.pem'); // Clave privada del cliente
+    curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem'); // Certificado de la autoridad
+
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Verifica el certificado del servidor
     $response = curl_exec($ch);
     $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
@@ -92,6 +104,12 @@ function getUserData($userId, $adminToken) {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_SSLCERT, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cert.pem'); // Certificado del cliente
+    curl_setopt($ch, CURLOPT_SSLKEY, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\key.pem'); // Clave privada del cliente
+    curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem'); // Certificado de la autoridad
+
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Verifica el certificado del servidor
     $response = curl_exec($ch);
     $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
@@ -167,7 +185,12 @@ try {
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($ch, CURLOPT_SSLCERT, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cert.pem'); // Certificado del cliente
+        curl_setopt($ch, CURLOPT_SSLKEY, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\key.pem'); // Clave privada del cliente
+        curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem'); // Certificado de la autoridad
 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Verifica el certificado del servidor
         $response = curl_exec($ch);
         $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
