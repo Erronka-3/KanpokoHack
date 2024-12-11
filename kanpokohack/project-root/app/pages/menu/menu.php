@@ -227,7 +227,7 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Profile</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="index.php?route=12" class="nav_link">
                         <i class='bx bx-message-square-detail nav_icon'></i>
                         <span class="nav_name">Messages</span>
                     </a>

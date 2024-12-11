@@ -2,8 +2,11 @@
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
+
+
 // Iniciar la sesión
 session_start();
+include(__DIR__ . '/../../../config/config.php');
 
 // Verificar si el usuario está autenticado
 // if (!isset($_SESSION['access_token'])) {
@@ -39,7 +42,7 @@ function decryptData($encryptedData)
 }
 
 // Hacer la solicitud a la API para obtener la información encriptada
-$apiUrl = 'http://localhost:4000/infocards1/' . $username;
+$apiUrl = INFOCARDS1 . $username;
 $response = file_get_contents($apiUrl);
 
 if ($response === false) {
@@ -103,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $card_type = $_POST['card_type']; // Tipo de tarjeta (DEBIT o CREDIT)
 
                 // Realizar la solicitud a la API para activar/desactivar la tarjeta seleccionada
-                $apiUrl = "http://localhost:4000/enablecard1/{$username}/{$card_type}";
+                $apiUrl = ENABLECARDS1."{$username}/{$card_type}";
                 $ch = curl_init($apiUrl);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 $apiResponse = curl_exec($ch);
@@ -165,13 +168,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     /* Para las imágenes de las tarjetas (Débito y Crédito) */
     #debit-card {
-        background-image: url('../../img/Debito.png');
+        background-image: url('img/Debito.png');
         height: 250px;
         /* Altura inicial de la imagen */
     }
 
     #credit-card {
-        background-image: url('../../img/Credito.png');
+        background-image: url('img/Credito.png');
         height: 250px;
         /* Altura inicial de la imagen */
     }
@@ -258,6 +261,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             border-radius: 15px;
         }
     }
+    .card-title-credit {
+    background-color: #de3213; /* Fondo blanco */
+    padding: 10px; /* Opcional: Espaciado interno */
+    border-radius: 5px; /* Opcional: Bordes redondeados */
+    display: inline-block; /* Mantiene el fondo ajustado al contenido */
+    color: white;
+
+}
+
+.card-text-credit {
+    background-color: #de3213; Fondo blanco
+    /* Opcional: Espaciado interno */
+    border-radius: 5px; /* Opcional: Bordes redondeados */
+    display: inline-block; /* Mantiene el fondo ajustado al contenido */
+    color: white;
+}
+.card-title-debit {
+    background-color: #205eef; /* Fondo blanco */
+    padding: 10px; /* Opcional: Espaciado interno */
+    border-radius: 5px; /* Opcional: Bordes redondeados */
+    display: inline-block; /* Mantiene el fondo ajustado al contenido */
+    color: white;
+}
+
+.card-text-debit {
+    background-color: #205eef; /* Fondo blanco */
+    /* Opcional: Espaciado interno */
+    border-radius: 5px; /* Opcional: Bordes redondeados */
+    display: inline-block; /* Mantiene el fondo ajustado al contenido */
+    color: white;
+}
     </style>
 </head>
 
@@ -299,8 +333,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Tarjeta de Crédito -->
                 <div class="card card-selectable" id="credit-card" data-card-type="CREDIT">
                     <div class="card-body">
-                        <h5 class="card-title">Tarjeta Crédito</h5>
-                        <p class="card-text"><strong></strong> <?php
+                        <h5 class="card-title-credit">Tarjeta Crédito</h5>
+                        <p class="card-text-credit"><strong></strong> <?php
                         if (!empty($cards[0]['number'])) {
                             echo htmlspecialchars($cards[0]['number']);
                         } else {
@@ -313,8 +347,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Tarjeta de Débito -->
                 <div class="card card-selectable" id="debit-card" data-card-type="DEBIT">
                     <div class="card-body">
-                        <h5 class="card-title">Tarjeta Débito</h5>
-                        <p class="card-text"><strong></strong> <?php
+                        <h5 class="card-title-debit">Tarjeta Débito</h5>
+                        <p class="card-text-debit"><strong></strong> <?php
                         if (!empty($cards[0]['number'])) {
                             echo htmlspecialchars($cards[1]['number']);
                         } else {
@@ -407,7 +441,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     }
 
                     // Realizar la solicitud para activar la nueva tarjeta
-                    fetch(`http://localhost:4000/enablecard1/<?php echo $username; ?>/${cardType}`, {
+                    fetch(`<?php echo ENABLECARDS1; ?><?php echo $username; ?>/${cardType}`, {
                             method: 'GET'
                         })
                         .then(response => response

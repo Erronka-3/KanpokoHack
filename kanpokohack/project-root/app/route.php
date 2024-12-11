@@ -13,6 +13,10 @@ function route($path) {
         '7' => __DIR__ . '/pages/expense/get_expenses.php',
         '8' => __DIR__ . '/pages/expense/delete_expense.php',
         '9' => __DIR__ . '/pages/expense/register_expense.php',
+        '10' => __DIR__ . '/pages/expense/update_expense.php',
+        '11' => __DIR__ . '/pages/expense/get_expense_by_id.php',
+        '12' => __DIR__ . '/pages/users/roles.php',
+       '13' => __DIR__ . '/pages/users/edit_roles.php', 
     ];
 
     // Si la ruta está definida en el array, incluir el archivo correspondiente
@@ -20,7 +24,7 @@ function route($path) {
         require_once $routes[$path];
     } else {
         // Si la ruta no está definida, cargar una página 404
-        require_once __DIR__ . '/pages/404.php';
+        require_once __DIR__ . '/pages/home/logout.php';
     }
 }
 

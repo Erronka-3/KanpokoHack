@@ -50,4 +50,12 @@
 Order allow,deny
 Deny from all
 </Files>
+<Files "roles.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "edit_roles.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
 
