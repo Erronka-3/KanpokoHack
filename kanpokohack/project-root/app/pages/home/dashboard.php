@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Dashboard</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
 <?php
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
@@ -26,31 +44,24 @@ $userRoles = $_SESSION['user_roles'];
 // Verificar si el usuario tiene el rol "admin"
 $isAdmin = in_array('admin', $userRoles);
 ?>
- 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de Usuario - Dashboard</title>
-    <!-- Incluye Bootstrap desde un CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
-</head>
+
+
+
 <body>
- 
+
 
     <!-- Contenedor principal -->
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center py-3">
-       
+
         <!-- Cabecera de bienvenida -->
         <header class="row mb-4">
             <div class="col-12 text-center">
                 <h1 class="h3">Bienvenido, <span id="user-name"><?php echo  $_SESSION['name']; ?></span></h1>
-                <p class="lead">Rol: <strong id="user-role"><?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?></strong></p>
+                <p class="lead">Rol: <strong
+                        id="user-role"><?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?></strong></p>
             </div>
         </header>
- 
+
         <!-- Sección de Resumen con tarjetas -->
         <section class="row mb-4">
             <div class="col-12 col-sm-6 col-lg-4 mb-3">
@@ -87,69 +98,71 @@ $isAdmin = in_array('admin', $userRoles);
                 </div>
             </div>
         </section>
- 
+
         <!-- Sección de Accesos Rápidos -->
         <section class="row mb-4">
             <div class="col-12">
                 <h2 class="h5 mb-3">Accesos Rápidos</h2>
                 <div class="d-flex flex-wrap justify-content-around">
-                    <button class="btn btn-primary mb-2 col-12 col-md-5 col-lg-2 mx-1">Usuarios</button>
-                    <button class="btn btn-secondary mb-2 col-12 col-md-5 col-lg-2 mx-1">Reportes</button>
-                    <button class="btn btn-info mb-2 col-12 col-md-5 col-lg-2 mx-1">Configuración</button>
-                    <button class="btn btn-dark mb-2 col-12 col-md-5 col-lg-2 mx-1">Soporte</button>
- 
+                    <a href="index.php?route=3" class="btn btn-primary mb-2 col-12 col-md-5 col-lg-2 mx-1">Tarjetas</a>
+                    <a href="index.php?route=4" class="btn btn-secondary mb-2 col-12 col-md-5 col-lg-2 mx-1">Gastos</a>
+                    <a href="index.php?route=13" class="btn btn-dark mb-2 col-12 col-md-5 col-lg-2 mx-1">Soporte</a>
+
+
                     <!-- Enlace visible para todos los usuarios -->
-                    <a href="users.php" class="btn btn-warning mb-2 col-12 col-md-5 col-lg-2 mx-1">Modificar mi cuenta</a> <!-- Enlace a la página de modificar usuario -->
- 
-                    <!-- Mostrar el botón de Administrador solo si el rol es Admin -->
-                    <?php if ($isAdmin): ?>
-                        <div class="dropdown mb-2 col-12 col-md-5 col-lg-2 mx-1">
-                            <button class="btn btn-danger dropdown-toggle" type="button" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Administrador
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="adminDropdown">
-                                <a class="dropdown-item" href="admin_users.php">Gestión de Usuarios</a> <!-- Enlace a la página de administración de usuarios -->
-                                <a class="dropdown-item" href="#">Configuración del Sistema</a>
-                                <a class="dropdown-item" href="#">Revisión de Seguridad</a>
-                            </div>
-                        </div>
-                    <?php endif; ?>
+                    <a href="index.php?route=2" class="btn btn-warning mb-2 col-12 col-md-5 col-lg-2 mx-1">Mi cuenta</a>
+                    <!-- Enlace a la página de modificar usuario -->
+
+
                 </div>
             </div>
         </section>
- 
+
         <!-- Vista Personalizada según Rol -->
         <section class="row">
-            <div class="col-12">
-                <h2 class="h5 mb-3">Información de <span id="role-specific"><?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?></span></h2>
-               
-                <!-- Información específica para el Administrador -->
+            <div class="col-12 text-center">
+                <h2 class="h5 mb-3">
+                    Información de
+                    <span id="role-specific">
+                        <?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?>
+                    </span>
+                </h2>
+
+                <!-- Mostrar el botón de Administrador solo si el rol es Admin -->
                 <?php if ($isAdmin): ?>
-                    <div id="admin-section" style="display: none;">
-                        <p>Panel de control para el Administrador. Incluye la configuración general y la gestión de usuarios.</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">Gestión de Usuarios</li>
-                            <li class="list-group-item">Configuración del Sistema</li>
-                            <li class="list-group-item">Revisión de Seguridad</li>
-                        </ul>
+                <div class="d-flex justify-content-center">
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="adminDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Administrador
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                            <a class="dropdown-item" href="index.php?route=12">Gestión de Usuarios</a>
+                            <a class="dropdown-item" href="#web">Configuración del Sistema</a>
+                            <a class="dropdown-item" href="#web">Revisión de Seguridad</a>
+                        </div>
                     </div>
+                </div>
                 <?php endif; ?>
-               
+
                 <!-- Información para usuarios no admins -->
                 <?php if (!$isAdmin): ?>
-                    <div id="user-section">
-                        <p>Panel de control para el Usuario. Incluye tus configuraciones personales y las opciones disponibles.</p>
-                    </div>
+                <div id="user-section" class="text-center">
+                    <p>Panel de control para el Usuario. Incluye tus configuraciones personales y las opciones
+                        disponibles.</p>
+                </div>
                 <?php endif; ?>
             </div>
         </section>
+
     </div>
- 
+
     <!-- JS de Bootstrap y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/dashboard.js"></script> <!-- JS personalizado para roles -->
- 
+
 </body>
+
 </html>

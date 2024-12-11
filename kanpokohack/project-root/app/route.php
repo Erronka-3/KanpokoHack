@@ -16,7 +16,8 @@ function route($path) {
         '10' => __DIR__ . '/pages/expense/update_expense.php',
         '11' => __DIR__ . '/pages/expense/get_expense_by_id.php',
         '12' => __DIR__ . '/pages/users/roles.php',
-       '13' => __DIR__ . '/pages/users/edit_roles.php', 
+        '13' => __DIR__ . '/pages/contact/contact.php',
+        '14' => __DIR__ . '/pages/contact/send_email.php',
     ];
 
     // Si la ruta está definida en el array, incluir el archivo correspondiente

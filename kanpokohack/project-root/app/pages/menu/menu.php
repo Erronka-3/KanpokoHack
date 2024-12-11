@@ -4,6 +4,22 @@ ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
 
+
+include(__DIR__ . '/../../../config/config.php');
+
+// Verificar si hay un token de autenticación en la sesión
+if (!isset($_SESSION['user_roles'])) {
+    header("Location: index.php?route=6");
+    exit;
+}
+
+// Obtener roles
+$userRoles = $_SESSION['user_roles'];
+
+// Verificar si el usuario tiene el rol "admin"
+$isAdmin = in_array('admin', $userRoles);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -202,6 +218,21 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
             padding-left: calc(var(--nav-width) + 188px);
         }
     }
+
+    /* Estilos para enlaces bloqueados */
+    .nav_link.blocked {
+        pointer-events: none;
+        /* Desactiva la interacción con el enlace */
+        opacity: 0.5;
+        /* Hace que el enlace se vea atenuado (bloqueado visualmente) */
+        color: #ccc;
+        /* Cambia el color del texto a un gris más claro */
+    }
+
+    .nav_link.blocked:hover {
+        cursor: not-allowed;
+        /* Cambia el cursor a 'no permitido' cuando se pasa por encima del enlace */
+    }
     </style>
 </head>
 
@@ -227,22 +258,26 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Profile</span>
                     </a>
-                    <a href="index.php?route=12" class="nav_link">
-                        <i class='bx bx-message-square-detail nav_icon'></i>
-                        <span class="nav_name">Messages</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class='bx bx-bookmark nav_icon'></i>
-                        <span class="nav_name">Bookmark</span>
-                    </a>
+
                     <a href="index.php?route=3" class="nav_link">
                         <i class='bx bx-folder nav_icon'></i>
-                        <span class="nav_name">Files</span>
+                        <span class="nav_name">Cards</span>
                     </a>
                     <a href="index.php?route=4" class="nav_link">
                         <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
-                        <span class="nav_name">Stats</span>
+                        <span class="nav_name">Expense</span>
                     </a>
+                    <a href="index.php?route=13" class="nav_link">
+                        <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">Contact</span>
+                    </a>
+                    <!-- Ruta 12 (Mensajes) bloqueada si no es admin -->
+                    <a href="index.php?route=12" class="nav_link <?php echo !$isAdmin ? 'blocked' : ''; ?>"
+                        <?php echo !$isAdmin ? 'aria-disabled="true"' : ''; ?>>
+                        <i class='bx bx-cog nav_icon'></i>
+                        <span class="nav_name">Settings</span>
+                    </a>
+
                 </div>
             </div>
             <a href="index.php?route=6" class="nav_link">
@@ -257,59 +292,58 @@ ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de l
     <script>
     // Para que se cargue en el menu 'active' cada apartado
     document.addEventListener("DOMContentLoaded", function(event) {
-    // Función para manejar la visibilidad del menú lateral
-    const showNavbar = (toggleId, navId, bodyId, headerId) => {
-        const toggle = document.getElementById(toggleId),
-            nav = document.getElementById(navId),
-            bodypd = document.getElementById(bodyId),
-            headerpd = document.getElementById(headerId);
+        // Función para manejar la visibilidad del menú lateral
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+            const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId),
+                bodypd = document.getElementById(bodyId),
+                headerpd = document.getElementById(headerId);
 
-        if (toggle && nav && bodypd && headerpd) {
-            toggle.addEventListener('click', () => {
-                nav.classList.toggle('show');
-                toggle.classList.toggle('bx-x');
-                bodypd.classList.toggle('body-pd');
-                headerpd.classList.toggle('body-pd');
-            });
+            if (toggle && nav && bodypd && headerpd) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('show');
+                    toggle.classList.toggle('bx-x');
+                    bodypd.classList.toggle('body-pd');
+                    headerpd.classList.toggle('body-pd');
+                });
+            }
+        };
+
+        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
+
+        // Obtener el parámetro 'route' de la URL actual
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentRoute = urlParams.get('route'); // Obtener el valor de 'route'
+
+        const linkColor = document.querySelectorAll('.nav_link');
+
+        // Función para aplicar la clase 'active' al enlace correspondiente
+        function colorLink() {
+            linkColor.forEach(l => l.classList.remove('active')); // Remover clase 'active' de todos los enlaces
+
+            // Obtener el valor del parámetro 'route' del enlace
+            const linkRoute = new URLSearchParams(l.getAttribute("href").split('?')[1]).get('route');
+
+            // Añadir la clase 'active' si coincide el valor de 'route'
+            if (linkRoute === currentRoute) {
+                l.classList.add('active');
+            }
         }
-    };
 
-    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
+        // Añadir el evento de clic a cada enlace
+        linkColor.forEach(l => l.addEventListener('click', colorLink));
 
-    // Obtener el parámetro 'route' de la URL actual
-    const urlParams = new URLSearchParams(window.location.search);
-    const currentRoute = urlParams.get('route'); // Obtener el valor de 'route'
+        // Marcar el enlace activo al cargar la página
+        linkColor.forEach(link => {
+            // Obtener el valor del parámetro 'route' del enlace
+            const linkRoute = new URLSearchParams(link.getAttribute("href").split('?')[1]).get('route');
 
-    const linkColor = document.querySelectorAll('.nav_link');
-
-    // Función para aplicar la clase 'active' al enlace correspondiente
-    function colorLink() {
-        linkColor.forEach(l => l.classList.remove('active')); // Remover clase 'active' de todos los enlaces
-
-        // Obtener el valor del parámetro 'route' del enlace
-        const linkRoute = new URLSearchParams(l.getAttribute("href").split('?')[1]).get('route');
-
-        // Añadir la clase 'active' si coincide el valor de 'route'
-        if (linkRoute === currentRoute) {
-            l.classList.add('active');
-        }
-    }
-
-    // Añadir el evento de clic a cada enlace
-    linkColor.forEach(l => l.addEventListener('click', colorLink));
-
-    // Marcar el enlace activo al cargar la página
-    linkColor.forEach(link => {
-        // Obtener el valor del parámetro 'route' del enlace
-        const linkRoute = new URLSearchParams(link.getAttribute("href").split('?')[1]).get('route');
-
-        // Comparar el parámetro 'route'
-        if (linkRoute === currentRoute) {
-            link.classList.add('active'); // Marcar como activo el enlace correspondiente
-        }
+            // Comparar el parámetro 'route'
+            if (linkRoute === currentRoute) {
+                link.classList.add('active'); // Marcar como activo el enlace correspondiente
+            }
+        });
     });
-});
-
     </script>
 </body>
 

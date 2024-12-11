@@ -97,20 +97,24 @@ include '../app/pages/menu/menu.php';
         /* Asegura que esté por encima del contenido */
     }
 
-      /* Estilo para los títulos (encabezados) en azul pastel */
+    /* Estilo para los títulos (encabezados) en azul pastel */
     /* Estilo para los títulos (encabezados) en azul pastel dentro de la tabla */
     table.table th {
-        background-color: #3e4567; /* Azul pastel */
-        color: white; /* Texto en blanco */
+        background-color: #3e4567;
+        /* Azul pastel */
+        color: white;
+        /* Texto en blanco */
     }
 
     /* Estilo para las filas alternadas (gris suave y blanco) dentro de la tabla */
     table.table tbody tr:nth-child(odd) {
-        background-color: #f0f0f0; /* Gris suave */
+        background-color: #f0f0f0;
+        /* Gris suave */
     }
 
     table.table tbody tr:nth-child(even) {
-        background-color: white; /* Blanco */
+        background-color: white;
+        /* Blanco */
     }
 
     /* Estilo para la tabla (opcional) */
@@ -120,7 +124,8 @@ include '../app/pages/menu/menu.php';
     }
 
     /* Opcional: agregar un borde suave a las celdas */
-    table td, table th {
+    table td,
+    table th {
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
@@ -253,38 +258,38 @@ include '../app/pages/menu/menu.php';
 
 
 
-    <!-- Historial de Gastos -->
-<section class="row">
-    <div class="col-12">
-        <h3 class="h5">Historial de Gastos</h3>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Fecha 
-                        <button id="sort-date" class="btn btn-sm">
-                            <i class="fas fa-arrow-down text-white"></i> <!-- Flecha hacia abajo -->
-                        </button>
-                    </th>
-                    <th>Descripción</th>
-                    <th>Importe 
-                        <button id="sort-amount" class="btn btn-sm">
-                            <i class="fas fa-arrow-down text-white"></i> <!-- Flecha hacia abajo -->
-                        </button>
-                    </th>
-                    <th>Ticket</th>
-                    <th>Delete</th>
-                </tr>
-            </thead>
-            <tbody id="expenses-list">
-                <!-- Los gastos registrados se cargarán dinámicamente aquí -->
-            </tbody>
-        </table>
-        <!-- Cálculo del Total -->
-        <div class="text-right mt-3">
-            <h5>Total de Gastos: <span id="total-expenses">$0</span></h5>
-        </div>
-    </div>
-</section>
+        <!-- Historial de Gastos -->
+        <section class="row">
+            <div class="col-12">
+                <h3 class="h5">Historial de Gastos</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Fecha
+                                <button id="sort-date" class="btn btn-sm">
+                                    <i class="fas fa-arrow-down text-white"></i> <!-- Flecha hacia abajo -->
+                                </button>
+                            </th>
+                            <th>Descripción</th>
+                            <th>Importe
+                                <button id="sort-amount" class="btn btn-sm">
+                                    <i class="fas fa-arrow-down text-white"></i> <!-- Flecha hacia abajo -->
+                                </button>
+                            </th>
+                            <th>Ticket</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenses-list">
+                        <!-- Los gastos registrados se cargarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+                <!-- Cálculo del Total -->
+                <div class="text-right mt-3">
+                    <h5>Total de Gastos: <span id="total-expenses">$0</span></h5>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- JS de Bootstrap y jQuery -->
@@ -455,58 +460,59 @@ include '../app/pages/menu/menu.php';
         toggleForm('update-form-container', false);
     });
 
- // Variables de orden
-let sortOrderDate = true;  // true para ascendente, false para descendente
-let sortOrderAmount = true;  // true para ascendente, false para descendente
+    // Variables de orden
+    let sortOrderDate = true; // true para ascendente, false para descendente
+    let sortOrderAmount = true; // true para ascendente, false para descendente
 
-// Función para alternar las flechas de ordenación
-function toggleArrow(button, isAscending) {
-    const icon = button.querySelector('i');
-    if (isAscending) {
-        icon.classList.remove('fa-arrow-down');
-        icon.classList.add('fa-arrow-up');
-    } else {
-        icon.classList.remove('fa-arrow-up');
-        icon.classList.add('fa-arrow-down');
-    }
-}
-
-// Ordenar por fecha
-document.getElementById('sort-date').addEventListener('click', () => {
-    sortTableByColumn(0, 'date', sortOrderDate);
-    sortOrderDate = !sortOrderDate;  // Alternar el orden
-    toggleArrow(document.getElementById('sort-date'), sortOrderDate);  // Alternar la flecha
-});
-
-// Ordenar por importe
-document.getElementById('sort-amount').addEventListener('click', () => {
-    sortTableByColumn(2, 'amount', sortOrderAmount);
-    sortOrderAmount = !sortOrderAmount;  // Alternar el orden
-    toggleArrow(document.getElementById('sort-amount'), sortOrderAmount);  // Alternar la flecha
-});
-
-// Función para ordenar la tabla por una columna
-function sortTableByColumn(index, type, ascending) {
-    const rows = Array.from(document.querySelectorAll('#expenses-list tr'));
-    rows.sort((a, b) => {
-        const cellA = a.cells[index].textContent.trim();
-        const cellB = b.cells[index].textContent.trim();
-        
-        // Comparar los valores dependiendo del tipo (fecha o número)
-        let compare = 0;
-        if (type === 'date') {
-            compare = new Date(cellA) - new Date(cellB);  // Para fechas
-        } else if (type === 'amount') {
-            compare = parseFloat(cellA.replace('$', '').replace(',', '')) - parseFloat(cellB.replace('$', '').replace(',', ''));  // Para importes
+    // Función para alternar las flechas de ordenación
+    function toggleArrow(button, isAscending) {
+        const icon = button.querySelector('i');
+        if (isAscending) {
+            icon.classList.remove('fa-arrow-down');
+            icon.classList.add('fa-arrow-up');
+        } else {
+            icon.classList.remove('fa-arrow-up');
+            icon.classList.add('fa-arrow-down');
         }
+    }
 
-        return ascending ? compare : -compare;
+    // Ordenar por fecha
+    document.getElementById('sort-date').addEventListener('click', () => {
+        sortTableByColumn(0, 'date', sortOrderDate);
+        sortOrderDate = !sortOrderDate; // Alternar el orden
+        toggleArrow(document.getElementById('sort-date'), sortOrderDate); // Alternar la flecha
     });
 
-    // Reorganizar las filas en la tabla
-    const tbody = document.getElementById('expenses-list');
-    rows.forEach(row => tbody.appendChild(row));
-}
+    // Ordenar por importe
+    document.getElementById('sort-amount').addEventListener('click', () => {
+        sortTableByColumn(2, 'amount', sortOrderAmount);
+        sortOrderAmount = !sortOrderAmount; // Alternar el orden
+        toggleArrow(document.getElementById('sort-amount'), sortOrderAmount); // Alternar la flecha
+    });
+
+    // Función para ordenar la tabla por una columna
+    function sortTableByColumn(index, type, ascending) {
+        const rows = Array.from(document.querySelectorAll('#expenses-list tr'));
+        rows.sort((a, b) => {
+            const cellA = a.cells[index].textContent.trim();
+            const cellB = b.cells[index].textContent.trim();
+
+            // Comparar los valores dependiendo del tipo (fecha o número)
+            let compare = 0;
+            if (type === 'date') {
+                compare = new Date(cellA) - new Date(cellB); // Para fechas
+            } else if (type === 'amount') {
+                compare = parseFloat(cellA.replace('$', '').replace(',', '')) - parseFloat(cellB.replace('$',
+                    '').replace(',', '')); // Para importes
+            }
+
+            return ascending ? compare : -compare;
+        });
+
+        // Reorganizar las filas en la tabla
+        const tbody = document.getElementById('expenses-list');
+        rows.forEach(row => tbody.appendChild(row));
+    }
     </script>
 </body>
 

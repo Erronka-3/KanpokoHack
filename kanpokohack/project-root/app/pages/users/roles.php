@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roles de usuarios</title>
+
 <head>
 <?php
 session_start();
@@ -46,72 +47,85 @@ function makeRequest($url, $headers = [], $method = 'GET', $postData = null) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Usuarios</title>
-    
-    <style>
-        /* Estilos generales para la tabla */
-        table.table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
+        <!DOCTYPE html>
+        <html lang="es">
 
-        /* Estilo para los encabezados de la tabla */
-        table.table th {
-            background-color: #3e4567; /* Azul pastel */
-            color: white; /* Texto en blanco */
-            padding: 12px 15px; /* Relleno para que se vea más espacioso */
-            text-align: left;
-        }
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Lista de Usuarios</title>
 
-        /* Estilo para las filas alternadas (gris suave y blanco) dentro de la tabla */
-        table.table tbody tr:nth-child(odd) {
-            background-color: #f0f0f0; /* Gris suave */
-        }
+            <style>
+            /* Estilos generales para la tabla */
+            table.table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
 
-        table.table tbody tr:nth-child(even) {
-            background-color: white; /* Blanco */
-        }
+            /* Estilo para los encabezados de la tabla */
+            table.table th {
+                background-color: #3e4567;
+                /* Azul pastel */
+                color: white;
+                /* Texto en blanco */
+                padding: 12px 15px;
+                /* Relleno para que se vea más espacioso */
+                text-align: left;
+            }
 
-        /* Estilo para las celdas de la tabla */
-        table td, table th {
-            border: 1px solid #ddd; /* Borde suave */
-            padding: 10px 15px; /* Relleno para mayor espacio */
-            text-align: left;
-        }
+            /* Estilo para las filas alternadas (gris suave y blanco) dentro de la tabla */
+            table.table tbody tr:nth-child(odd) {
+                background-color: #f0f0f0;
+                /* Gris suave */
+            }
 
-        /* Cambiar el color de fondo al pasar el ratón sobre las filas */
-        td:hover {
-         background-color: #dff9d1; /* Gris claro */
-        }
+            table.table tbody tr:nth-child(even) {
+                background-color: white;
+                /* Blanco */
+            }
 
-        /* Estilo para los botones dentro de la tabla */
-        button {
-            padding: 6px 12px;
-            background-color: #4CAF50; /* Verde */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+            /* Estilo para las celdas de la tabla */
+            table td,
+            table th {
+                border: 1px solid #ddd;
+                /* Borde suave */
+                padding: 10px 15px;
+                /* Relleno para mayor espacio */
+                text-align: left;
+            }
 
-        button:hover {
-            background-color: #45a049; /* Verde oscuro al pasar el ratón */
-        }
+            /* Cambiar el color de fondo al pasar el ratón sobre las filas */
+            td:hover {
+                background-color: #dff9d1;
+                /* Gris claro */
+            }
 
-        /* Opcional: margen alrededor de la tabla para separarla de otros elementos */
-        table.table {
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-<?php
+            /* Estilo para los botones dentro de la tabla */
+            button {
+                padding: 6px 12px;
+                background-color: #4CAF50;
+                /* Verde */
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+                /* Verde oscuro al pasar el ratón */
+            }
+
+            /* Opcional: margen alrededor de la tabla para separarla de otros elementos */
+            table.table {
+                margin-top: 30px;
+            }
+            </style>
+        </head>
+
+    <body>
+        <?php
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION['access_token'])) {
     echo "Error: Usuario no autenticado.";
@@ -196,63 +210,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<div id="modal" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);">
-    <div style="position: relative; margin: 10% auto; width: 400px; background-color: white; padding: 20px; border-radius: 5px;">
-        <h2>Editar Estado de Usuario</h2>
-        <form id="editForm" onsubmit="updateUserStatus(event)">
-            <input type="hidden" name="user_id" id="user_id">
-            <label for="status">Estado:</label>
-            <select name="status" id="status">
-                <option value="alta">Alta</option>
-                <option value="baja">Baja</option>
-            </select>
-            <button type="submit">Actualizar Estado</button>
-            <button type="button" onclick="closeModal()">Cerrar</button>
-        </form>
-    </div>
-</div>
+        <div id="modal"
+            style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);">
+            <div
+                style="position: relative; margin: 10% auto; width: 400px; background-color: white; padding: 20px; border-radius: 5px;">
+                <h2>Editar Estado de Usuario</h2>
+                <form id="editForm" onsubmit="updateUserStatus(event)">
+                    <input type="hidden" name="user_id" id="user_id">
+                    <label for="status">Estado:</label>
+                    <select name="status" id="status">
+                        <option value="alta">Alta</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                    <button type="submit">Actualizar Estado</button>
+                    <button type="button" onclick="closeModal()">Cerrar</button>
+                </form>
+            </div>
+        </div>
 
-<script>
-function openModal(userId) {
-    document.getElementById('user_id').value = userId;
-    document.getElementById('modal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('modal').style.display = 'none';
-}
-
-async function updateUserStatus(event) {
-    event.preventDefault();
-
-    const userId = document.getElementById('user_id').value;
-    const status = document.getElementById('status').value;
-
-    try {
-        const response = await fetch('', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: new URLSearchParams({
-                user_id: userId,
-                status: status
-            })
-        });
-
-        if (response.ok) {
-            closeModal();
-
-            // Actualizar el estado en la tabla
-            const userRow = document.querySelector(`tr[data-user-id="${userId}"]`);
-            if (userRow) {
-                userRow.querySelector('.status-column').textContent = status === 'alta' ? 'Alta' : 'Baja';
-            }
-        } else {
-            console.error('Error al actualizar el estado:', response.statusText);
+        <script>
+        function openModal(userId) {
+            document.getElementById('user_id').value = userId;
+            document.getElementById('modal').style.display = 'block';
         }
-    } catch (error) {
-        console.error('Error en la solicitud:', error);
-    }
-}
-</script>
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        async function updateUserStatus(event) {
+            event.preventDefault();
+
+            const userId = document.getElementById('user_id').value;
+            const status = document.getElementById('status').value;
+
+            try {
+                const response = await fetch('', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        user_id: userId,
+                        status: status
+                    })
+                });
+
+                if (response.ok) {
+                    closeModal();
+
+                    // Actualizar el estado en la tabla
+                    const userRow = document.querySelector(`tr[data-user-id="${userId}"]`);
+                    if (userRow) {
+                        userRow.querySelector('.status-column').textContent = status === 'alta' ? 'Alta' : 'Baja';
+                    }
+                } else {
+                    console.error('Error al actualizar el estado:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error en la solicitud:', error);
+            }
+        }
+        </script>
