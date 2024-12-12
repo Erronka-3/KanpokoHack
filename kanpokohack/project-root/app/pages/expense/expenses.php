@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Gastos</title>
+    <!-- Incluye Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <?php
 // Iniciar la sesión
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
@@ -16,17 +28,7 @@ if (!isset($_SESSION['access_token'])) {
 include '../app/pages/menu/menu.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Gastos</title>
-    <!-- Incluye Bootstrap desde un CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS personalizado -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
     /* Estilo para el fondo semitransparente */
     .expense-form-container {
@@ -136,7 +138,7 @@ include '../app/pages/menu/menu.php';
         background-color: #3e4567;
     }
     </style>
-</head>
+
 
 <body class="d-flex align-items-center justify-content-center min-vh-100">
 
