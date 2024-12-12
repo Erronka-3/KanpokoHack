@@ -3,6 +3,7 @@
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
+
 include(__DIR__ . '/../../../config/db/db.php');
 
 session_start(); // Iniciar sesión para acceder al usuario
@@ -24,31 +25,51 @@ $end_date = isset($_GET['end_date']) ? $_GET['end_date'] : '';
 $min_amount = isset($_GET['min_amount']) ? $_GET['min_amount'] : '';
 $max_amount = isset($_GET['max_amount']) ? $_GET['max_amount'] : '';
 
-// Si es administrador, obtener todos los gastos, si no, solo los del usuario autenticado
-$sql = "SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario 
-        FROM gastos";
+// Formatear las fechas correctamente (si están definidas)
+if (!empty($start_date)) {
+    $start_date = date('Y-m-d', strtotime($start_date));
+}
+if (!empty($end_date)) {
+    $end_date = date('Y-m-d', strtotime($end_date));
+}
+
+// Validar los importes (asegurarse de que son numéricos)
+if (!empty($min_amount) && is_numeric($min_amount)) {
+    $min_amount = (float) $min_amount;
+}
+if (!empty($max_amount) && is_numeric($max_amount)) {
+    $max_amount = (float) $max_amount;
+}
+
+// Construir la consulta SQL
+$sql = "SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos";
+$conditions = []; // Condiciones para WHERE
 
 if (!$isAdmin) {
-    // Si no es admin, solo mostrar los gastos del usuario autenticado
-    $sql .= " WHERE usuario = ?";
-} 
+    $conditions[] = "usuario = ?";
+}
 
 // Filtros de fechas
 if (!empty($start_date) && !empty($end_date)) {
-    $sql .= " AND fecha BETWEEN ? AND ?";
+    $conditions[] = "fecha BETWEEN ? AND ?";
 } elseif (!empty($start_date)) {
-    $sql .= " AND fecha >= ?";
+    $conditions[] = "fecha >= ?";
 } elseif (!empty($end_date)) {
-    $sql .= " AND fecha <= ?";
+    $conditions[] = "fecha <= ?";
 }
 
 // Filtro de importes
 if (!empty($min_amount) && !empty($max_amount)) {
-    $sql .= " AND importe BETWEEN ? AND ?";
+    $conditions[] = "importe BETWEEN ? AND ?";
 } elseif (!empty($min_amount)) {
-    $sql .= " AND importe >= ?";
+    $conditions[] = "importe >= ?";
 } elseif (!empty($max_amount)) {
-    $sql .= " AND importe <= ?";
+    $conditions[] = "importe <= ?";
+}
+
+// Añadir las condiciones a la consulta SQL
+if (!empty($conditions)) {
+    $sql .= " WHERE " . implode(" AND ", $conditions);
 }
 
 // Ordenar por fecha descendente
@@ -80,9 +101,18 @@ if (!empty($min_amount) && !empty($max_amount)) {
     $params[] = $max_amount;
 }
 
+// Registrar consulta para depuración
+error_log("SQL Query: $sql");
+error_log("Params: " . json_encode($params));
+
 $stmt->execute($params);
 
 $gastos = $stmt->fetchAll();
+
+// Codificar correctamente los resultados para evitar problemas con caracteres especiales
+foreach ($gastos as &$gasto) {
+    $gasto = array_map('utf8_encode', $gasto);
+}
 
 // Registrar los datos para depuración
 error_log(json_encode($gastos));

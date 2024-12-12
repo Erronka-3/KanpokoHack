@@ -45,6 +45,7 @@
 <Files "error.log">
     Require all denied
 </Files>
-<Files "cacert.pem">
+# Permitir acceso a archivos con extensiones específicas
+<FilesMatch "\\.(txt|pem|png|jpg)$">
     Require all granted
-</Files>
+</FilesMatch>

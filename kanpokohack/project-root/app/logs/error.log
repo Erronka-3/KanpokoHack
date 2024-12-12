@@ -2048,3 +2048,564 @@ Stack trace:
 [12-Dec-2024 08:57:29 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
 [12-Dec-2024 08:57:29 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
 [12-Dec-2024 08:57:29 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 09:48:01 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 10:16:48 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 10:17:03 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 10:23:32 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 10:23:33 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 10:23:34 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\users\roles.php:175
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once()
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('12')
+#2 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\users\roles.php on line 175
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 10:23:53 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 11:28:42 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 11:43:07 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:36:49 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:36:52 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:36:54 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:37:06 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:37:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:37:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:37:24 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha BETWEEN ? AND ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:37:27 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:37:32 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost:4000/infocards1/user1): Failed to open stream: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\cards\cards.php on line 56
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:37:45 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:38:14 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:39:08 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:39:09 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:39:14 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost:4000/infocards1/user1): Failed to open stream: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\cards\cards.php on line 56
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:39:50 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:39:54 Europe/Berlin] PHP Warning:  file_get_contents(http://localhost:4000/infocards1/user1): Failed to open stream: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\cards\cards.php on line 56
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:40:48 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:44:20 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:44:27 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:44:31 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:44:41 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:46:27 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:47:07 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:49:29 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:50:04 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:50:42 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:50:47 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:50:51 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:53:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? AND importe <= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:53:29 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? AND importe BETWEEN ? AND ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:53:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? AND importe >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:53:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:55:58 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:56:03 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:59:00 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:59:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:59:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:59:15 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 13:59:32 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 13:59:37 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 13:59:40 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:20:39 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:20:45 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:20:50 Europe/Berlin] []
+[12-Dec-2024 18:20:53 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:10 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:13 Europe/Berlin] []
+[12-Dec-2024 18:21:17 Europe/Berlin] []
+[12-Dec-2024 18:21:20 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:25 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:30 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:35 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:39 Europe/Berlin] []
+[12-Dec-2024 18:21:42 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:21:50 Europe/Berlin] []
+[12-Dec-2024 18:21:53 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:22:54 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:22:57 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:22:59 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:23:08 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 18:23:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 18:23:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fecha >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 18:23:22 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:23:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND importe >= ? ORDER BY fecha DESC' at line 2 in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php:58
+Stack trace:
+#0 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php(58): PDO->prepare('SELECT id, fech...')
+#1 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\route.php(25): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\public\index.php(11): route('7')
+#3 {main}
+  thrown in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\app\pages\expense\get_expenses.php on line 58
+[12-Dec-2024 18:24:05 Europe/Berlin] [{"id":38,"fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":35,"fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:28:28 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos ORDER BY fecha DESC
+[12-Dec-2024 18:28:28 Europe/Berlin] Params: []
+[12-Dec-2024 18:28:28 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":"35","fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:28:51 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:28:51 Europe/Berlin] Params: ["2024-12-11"]
+[12-Dec-2024 18:28:51 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":"35","fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:28:57 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:28:57 Europe/Berlin] Params: ["2024-12-13"]
+[12-Dec-2024 18:28:57 Europe/Berlin] []
+[12-Dec-2024 18:29:01 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:29:01 Europe/Berlin] Params: ["2024-12-16"]
+[12-Dec-2024 18:29:01 Europe/Berlin] []
+[12-Dec-2024 18:29:04 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:29:04 Europe/Berlin] Params: ["2024-12-10"]
+[12-Dec-2024 18:29:04 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":"35","fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:29:08 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE fecha >= ? AND importe <= ? ORDER BY fecha DESC
+[12-Dec-2024 18:29:08 Europe/Berlin] Params: ["2024-12-10",300]
+[12-Dec-2024 18:29:08 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:29:11 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:29:11 Europe/Berlin] Params: ["2024-12-10"]
+[12-Dec-2024 18:29:11 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"},{"id":"35","fecha":"2024-12-11","descripcion":"123","importe":"456.00","ticket":"Untitled design (1).png","usuario":"98ab5ae3-e020-46d7-82b2-556a0a32e86d"}]
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:30:00 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:30:02 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:30:04 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:30:31 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:30:34 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:34 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25"]
+[12-Dec-2024 18:30:34 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:30:40 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? AND fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:40 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25","2024-12-11"]
+[12-Dec-2024 18:30:40 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:30:42 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? AND fecha >= ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:42 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25","2024-12-13"]
+[12-Dec-2024 18:30:42 Europe/Berlin] []
+[12-Dec-2024 18:30:49 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:49 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25"]
+[12-Dec-2024 18:30:49 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:30:52 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? AND importe <= ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:52 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25",300]
+[12-Dec-2024 18:30:52 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:30:56 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? AND importe <= ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:56 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25",200]
+[12-Dec-2024 18:30:56 Europe/Berlin] []
+[12-Dec-2024 18:30:58 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? ORDER BY fecha DESC
+[12-Dec-2024 18:30:58 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25"]
+[12-Dec-2024 18:30:58 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:32:50 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? ORDER BY fecha DESC
+[12-Dec-2024 18:32:50 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25"]
+[12-Dec-2024 18:32:50 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:36:50 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant KEYCLOAK_URL already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 5
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant REALM already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 6
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant CLIENT_ID already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 7
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant CLIENT_SECRET already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 8
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 9
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant REDIRECT_URI_LOGOUT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 10
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant CERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 13
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant KEY already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 14
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant CACERT already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 15
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant INFOCARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 18
+[12-Dec-2024 18:36:54 Europe/Berlin] PHP Warning:  Constant ENABLECARDS1 already defined in C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\config.php on line 19
+[12-Dec-2024 18:36:56 Europe/Berlin] SQL Query: SELECT id, fecha, nombre AS descripcion, importe, ticket, usuario FROM gastos WHERE usuario = ? ORDER BY fecha DESC
+[12-Dec-2024 18:36:56 Europe/Berlin] Params: ["c8abfd3e-0726-4e1e-9964-a71ec3171b25"]
+[12-Dec-2024 18:36:56 Europe/Berlin] [{"id":"38","fecha":"2024-12-12","descripcion":"34","importe":"256.00","ticket":"cacert.pem","usuario":"c8abfd3e-0726-4e1e-9964-a71ec3171b25"}]
