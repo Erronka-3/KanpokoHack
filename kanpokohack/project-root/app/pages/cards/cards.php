@@ -378,20 +378,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </section>
 
         <?php if (isset($message) && $message): ?>
-        <div class="alert alert-warning text-center"><?php echo htmlspecialchars($message); ?></div>
+        <div class="alert alert-warning text-center my-3">
+            <?php echo htmlspecialchars($message); ?>
+        </div>
         <?php elseif (isset($apiResponseError)): ?>
-        <div class="alert alert-danger text-center"><?php echo htmlspecialchars($apiResponseError); ?></div>
+        <div class="alert alert-danger text-center my-3">
+            <?php echo htmlspecialchars($apiResponseError); ?>
+        </div>
         <?php else: ?>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-12">
-                <h3 class="h5">Estado de las Tarjetas</h3>
+                <h3 class="h5 mb-3 text-primary">Estado de las Tarjetas</h3>
                 <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
+                    <table class="table table-striped table-hover table-bordered">
+                        <thead class="table-dark">
                             <tr>
-                                <th>Número de Tarjeta</th>
-                                <th>Estado</th>
-                                <th>Última Transacción</th>
+                                <th scope="col">Número de Tarjeta</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Última Transacción</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -408,6 +412,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
         <?php endif; ?>
+
 
         <script>
         const cards = <?php echo json_encode($cards); ?>;
@@ -489,10 +494,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 const statusColumn = document.querySelectorAll('table tbody tr');
                 statusColumn.forEach(row => {
                     const cardNumber = row.cells[0].textContent.trim();
-                    if (cardNumber === "<?php echo $cards[0]['number']; ?>") { // Tarjeta Débito
+                    if (cardNumber === "<?php echo $cards[1]['number']; ?>") { // Tarjeta Débito
                         row.cells[1].textContent = (cardType === 'DEBIT') ? 'Activo' : 'Inactivo';
                     }
-                    if (cardNumber === "<?php echo $cards[1]['number']; ?>") { // Tarjeta Crédito
+                    if (cardNumber === "<?php echo $cards[0]['number']; ?>") { // Tarjeta Crédito
                         row.cells[1].textContent = (cardType === 'CREDIT') ? 'Activo' : 'Inactivo';
                     }
                 });

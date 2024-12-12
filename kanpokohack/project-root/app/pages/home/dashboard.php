@@ -105,8 +105,11 @@ $isAdmin = in_array('admin', $userRoles);
                 <h2 class="h5 mb-3">Accesos Rápidos</h2>
                 <div class="d-flex flex-wrap justify-content-around">
                     <a href="index.php?route=3" class="btn btn-primary mb-2 col-12 col-md-5 col-lg-2 mx-1">Tarjetas</a>
-                    <a href="index.php?route=4" class="btn btn-secondary mb-2 col-12 col-md-5 col-lg-2 mx-1">Gastos</a>
-                    <a href="index.php?route=13" class="btn btn-dark mb-2 col-12 col-md-5 col-lg-2 mx-1">Soporte</a>
+                    <a href="index.php?route=4" class="btn mb-2 col-12 col-md-5 col-lg-2 mx-1"
+                        style="background-color: #ff5722; color: white;">Gastos</a>
+                    <a href="index.php?route=13" class="btn mb-2 col-12 col-md-5 col-lg-2 mx-1"
+                        style="background-color: #2196f3; color: white;">Soporte</a>
+
 
 
                     <!-- Enlace visible para todos los usuarios -->
