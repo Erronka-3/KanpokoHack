@@ -1,0 +1,11 @@
+# Bloquear acceso general a la carpeta app
+<Files "*">
+    Require all denied
+</Files>
+
+<Files "index.php">
+    Require all granted
+</Files>
+<Files "callback.php">
+    Require all granted
+</Files>

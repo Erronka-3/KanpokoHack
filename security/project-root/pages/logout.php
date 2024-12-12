@@ -2,7 +2,7 @@
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
-include(__DIR__ . '/../../../config/config.php');
+include('../config/config.php');
 
 // Destruir la sesión del usuario en la aplicación
 session_start();

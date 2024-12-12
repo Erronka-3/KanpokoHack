@@ -286,7 +286,7 @@ include '../app/pages/menu/menu.php';
                 </table>
                 <!-- Cálculo del Total -->
                 <div class="text-right mt-3">
-                    <h5>Total de Gastos: <span id="total-expenses">$0</span></h5>
+                    <h5>Total de Gastos: <span id="total-expenses">0€</span></h5>
                 </div>
             </div>
         </section>
@@ -326,7 +326,7 @@ include '../app/pages/menu/menu.php';
                 <tr>
                     <td>${expense.fecha}</td>
                     <td>${expense.descripcion}</td>
-                    <td>$${expense.importe}</td>
+                    <td>${expense.importe} €</td>
                     <td><a href="../app/pages/expense/storage/${expense.usuario}/${expense.ticket}" class="btn btn-info btn-sm" target="_blank">Ver Ticket</a></td>
                     <td><button class="btn btn-danger btn-sm" onclick="deleteExpense(${expense.id})"><i class="fas fa-trash"></i></button></td>
                 </tr>
@@ -335,7 +335,7 @@ include '../app/pages/menu/menu.php';
 
             // Actualizar el total
             let total = expenses.reduce((acc, expense) => acc + parseFloat(expense.importe), 0);
-            $('#total-expenses').text('$' + total.toFixed(2));
+            $('#total-expenses').text( total.toFixed(2)+' €' );
         });
     }
 

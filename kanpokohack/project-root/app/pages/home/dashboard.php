@@ -141,7 +141,7 @@ $isAdmin = in_array('admin', $userRoles);
                         </button>
                         <div class="dropdown-menu" aria-labelledby="adminDropdown">
                             <a class="dropdown-item" href="index.php?route=12">Gestión de Usuarios</a>
-                            <a class="dropdown-item" href="#web">Configuración del Sistema</a>
+                            <a class="dropdown-item" href="https://localhost/Kanpokohack/Beñat/security/project-root/pages/index.php" target="_blank">Configuración del Sistema</a>
                             <a class="dropdown-item" href="#web">Revisión de Seguridad</a>
                         </div>
                     </div>
