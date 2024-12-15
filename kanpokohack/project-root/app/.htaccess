@@ -46,6 +46,7 @@
     Require all denied
 </Files>
 # Permitir acceso a archivos con extensiones específicas
-<FilesMatch "\\.(txt|pem|png|jpg)$">
+<FilesMatch "\\.(txt|pem|png|jpg|css|js)$">
     Require all granted
 </FilesMatch>
+

@@ -8,58 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Incluir Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f9;
-    }
-
-    .form-container {
-        max-width: 600px;
-        margin: 50px auto;
-        padding: 30px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #5c5c5c;
-    }
-
-    .form-container .form-group label {
-        font-weight: bold;
-        color: #333;
-    }
-
-    .form-container textarea {
-        resize: vertical;
-    }
-
-    .form-container .btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .form-container .btn:hover {
-        background-color: #0056b3;
-    }
-
-    .intro-icon {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #333;
-        font-size: 3em;
-        /* Aumenta el tamaño del icono */
-    }
-    </style>
+    <link rel="stylesheet" href="../app/assets/css/styles_contact.css">
 </head>
 <?php
 // Validación de envíos previos

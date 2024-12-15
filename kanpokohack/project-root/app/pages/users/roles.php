@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roles de usuarios</title>
+    <title>Gestión de usuarios</title>
+    <link rel="stylesheet" href="../app/assets/css/styles_roles.css">
+    <script defer src="../app/assets/js/scripts_roles.js"></script>
 
 <head>
-<?php
+        <?php
 session_start();
 
 // Verificar si el usuario está autenticado
@@ -47,82 +49,7 @@ function makeRequest($url, $headers = [], $method = 'GET', $postData = null) {
 
 ?>
 
-        <!DOCTYPE html>
-        <html lang="es">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Lista de Usuarios</title>
-
-            <style>
-            /* Estilos generales para la tabla */
-            table.table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 20px 0;
-            }
-
-            /* Estilo para los encabezados de la tabla */
-            table.table th {
-                background-color: #3e4567;
-                /* Azul pastel */
-                color: white;
-                /* Texto en blanco */
-                padding: 12px 15px;
-                /* Relleno para que se vea más espacioso */
-                text-align: left;
-            }
-
-            /* Estilo para las filas alternadas (gris suave y blanco) dentro de la tabla */
-            table.table tbody tr:nth-child(odd) {
-                background-color: #f0f0f0;
-                /* Gris suave */
-            }
-
-            table.table tbody tr:nth-child(even) {
-                background-color: white;
-                /* Blanco */
-            }
-
-            /* Estilo para las celdas de la tabla */
-            table td,
-            table th {
-                border: 1px solid #ddd;
-                /* Borde suave */
-                padding: 10px 15px;
-                /* Relleno para mayor espacio */
-                text-align: left;
-            }
-
-            /* Cambiar el color de fondo al pasar el ratón sobre las filas */
-            td:hover {
-                background-color: #dff9d1;
-                /* Gris claro */
-            }
-
-            /* Estilo para los botones dentro de la tabla */
-            button {
-                padding: 6px 12px;
-                background-color: #4CAF50;
-                /* Verde */
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background-color: #45a049;
-                /* Verde oscuro al pasar el ratón */
-            }
-
-            /* Opcional: margen alrededor de la tabla para separarla de otros elementos */
-            table.table {
-                margin-top: 30px;
-            }
-            </style>
-        </head>
 
     <body>
         <?php
@@ -160,6 +87,7 @@ $headers = [
     'Authorization: Bearer ' . $_SESSION['access_token']
 ];
 
+// Obtener la lista de usuarios desde Keycloak (incluyendo nombres y apellidos)
 try {
     $users = makeRequest($usersUrl, $headers);
 } catch (Exception $e) {
@@ -170,105 +98,83 @@ try {
 // Mostrar la lista de usuarios
 echo "<h1>Lista de Usuarios</h1>";
 echo "<table border='1' id='userTable'>";
-echo "<tr><th>ID</th><th>Nombre</th><th>Email</th><th>Estado</th><th>Acciones</th></tr>";
+echo "<tr><th>ID</th><th>Usuario</th><th>Nombre</th><th>Apellido</th><th>Email</th><th>Estado</th><th>Acciones</th></tr>";
 foreach ($users as $user) {
     $status = $user['enabled'] ? 'Alta' : 'Baja';
     echo "<tr data-user-id='" . htmlspecialchars($user['id']) . "'>";
     echo "<td>" . htmlspecialchars($user['id']) . "</td>";
-    echo "<td>" . htmlspecialchars($user['username']) . "</td>";
-    echo "<td>" . htmlspecialchars($user['email'] ?? 'N/A') . "</td>";
+    echo "<td class='username-column'>" . htmlspecialchars($user['username']) . "</td>";
+    echo "<td class='firstName-column'>" . htmlspecialchars($user['firstName'] ?? 'N/A') . "</td>";
+    echo "<td class='lastName-column'>" . htmlspecialchars($user['lastName'] ?? 'N/A') . "</td>";
+    echo "<td class='email-column'>" . htmlspecialchars($user['email'] ?? 'N/A') . "</td>";
     echo "<td class='status-column'>" . $status . "</td>";
-    echo "<td><button onclick=\"openModal('" . htmlspecialchars($user['id']) . "')\">Editar Estado</button></td>";
+    echo "<td><button onclick=\"openModal('" . htmlspecialchars($user['id']) . "')\">Editar</button></td>";
     echo "</tr>";
 }
 echo "</table>";
 
-// Si se recibió una solicitud POST para actualizar el estado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $userId = $_POST['user_id'] ?? null;
+    $firstName = $_POST['firstName'] ?? null;
+    $lastName = $_POST['lastName'] ?? null;
+    $email = $_POST['email'] ?? null;
     $status = $_POST['status'] ?? null;
 
-    if (!$userId || !in_array($status, ['alta', 'baja'])) {
+    if (!$userId || !$firstName || !$lastName || !$email || !in_array($status, ['alta', 'baja'])) {
         http_response_code(400);
         echo "Datos inválidos.";
         exit();
     }
 
     $userUrl = KEYCLOAK_URL . "/admin/realms/" . REALM . "/users/$userId";
-    $newState = ($status === 'alta') ? true : false;
-    $postData = ['enabled' => $newState];
+    $postData = [
+        'firstName' => $firstName,
+        'lastName' => $lastName,
+        'email' => $email,
+        'enabled' => $status === 'alta'
+    ];
 
     try {
         makeRequest($userUrl, $headers, 'PUT', $postData);
-        echo "Estado actualizado exitosamente.";
+        echo "Usuario actualizado exitosamente.";
         exit();
     } catch (Exception $e) {
         http_response_code(500);
-        echo "Error al actualizar el estado del usuario: " . $e->getMessage();
+        echo "Error al actualizar el usuario: " . $e->getMessage();
         exit();
     }
 }
+
 ?>
 
         <div id="modal"
             style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);">
             <div
                 style="position: relative; margin: 10% auto; width: 400px; background-color: white; padding: 20px; border-radius: 5px;">
-                <h2>Editar Estado de Usuario</h2>
-                <form id="editForm" onsubmit="updateUserStatus(event)">
+                <h2>Editar Información del Usuario</h2>
+                <form id="editForm" onsubmit="updateUser(event)">
                     <input type="hidden" name="user_id" id="user_id">
+                    <label for="firstName">Nombre:</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                    <br><br>
+                    <label for="lastName">Apellido:</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                    <br><br>
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email">
+                    <br><br>
                     <label for="status">Estado:</label>
                     <select name="status" id="status">
                         <option value="alta">Alta</option>
                         <option value="baja">Baja</option>
                     </select>
-                    <button type="submit">Actualizar Estado</button>
+                    <br><br>
+                    <button type="submit">Actualizar Usuario</button>
                     <button type="button" onclick="closeModal()">Cerrar</button>
                 </form>
             </div>
         </div>
 
-        <script>
-        function openModal(userId) {
-            document.getElementById('user_id').value = userId;
-            document.getElementById('modal').style.display = 'block';
-        }
+    </body>
 
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-
-        async function updateUserStatus(event) {
-            event.preventDefault();
-
-            const userId = document.getElementById('user_id').value;
-            const status = document.getElementById('status').value;
-
-            try {
-                const response = await fetch('', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    },
-                    body: new URLSearchParams({
-                        user_id: userId,
-                        status: status
-                    })
-                });
-
-                if (response.ok) {
-                    closeModal();
-
-                    // Actualizar el estado en la tabla
-                    const userRow = document.querySelector(`tr[data-user-id="${userId}"]`);
-                    if (userRow) {
-                        userRow.querySelector('.status-column').textContent = status === 'alta' ? 'Alta' : 'Baja';
-                    }
-                } else {
-                    console.error('Error al actualizar el estado:', response.statusText);
-                }
-            } catch (error) {
-                console.error('Error en la solicitud:', error);
-            }
-        }
-        </script>
+</html>

@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de usuario</title>
+    <link rel="stylesheet" href="../app/assets/css/styles_profile.css">
+    <script defer src="../app/assets/js/scripts_profile.js"></script>
 
-<head>
-<?php
+    <head>
+        <?php
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
 ini_set('log_errors', '1');    // Registrar errores en un archivo
 ini_set('error_log', __DIR__ . '/../../logs/error.log'); // Ruta al archivo de log
@@ -221,102 +223,6 @@ try {
 }
 ?>
 
-        <!-- Agregar CSS para mejorar la apariencia -->
-        <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        h2 {
-            text-align: center;
-            color: #4CAF50;
-            margin-top: 20px;
-        }
-
-        .form-container {
-            width: 70%;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .form-row {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .form-row .form-group {
-            flex: 1 1 45%;
-        }
-
-        .form-container label {
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .form-container input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        .form-container input[disabled] {
-            background-color: #f2f2f2;
-        }
-
-        .form-container button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .form-container button:hover {
-            background-color: #45a049;
-        }
-
-        .form-container .message {
-            text-align: center;
-            margin-top: 20px;
-            color: green;
-        }
-
-        /* Estilos para el mensaje de éxito */
-        .message-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            /* Fondo transparente */
-            display: none;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .message-box {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            font-size: 16px;
-        }
-        </style>
 
         <!-- Formulario para mostrar y editar los datos del usuario -->
         <div class="form-container">
@@ -385,6 +291,6 @@ try {
         // Redirigir después de 2 segundos si la actualización fue exitosa
         setTimeout(function() {
             window.location.href = "index.php?route=2"; // Cambia a la URL de destino
-        }, 2000);
+        }, 20);
         <?php endif; ?>
         </script>

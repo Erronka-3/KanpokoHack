@@ -1,0 +1,107 @@
+ /* Estilo para el fondo semitransparente */
+ .expense-form-container {
+    display: none;
+    /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Fondo negro semitransparente */
+    z-index: 999;
+    /* Asegurarse de que el fondo cubra el contenido */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-overlay {
+    background-color: white;
+    padding: 20px;
+    /* Aumenta el padding para dar más espacio al formulario */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    /* Aumenta el tamaño máximo del formulario */
+    position: relative;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilo para los campos del formulario */
+.form-control {
+    padding: 12px;
+    /* Aumenta el padding dentro de los campos de texto */
+    font-size: 16px;
+    /* Aumenta el tamaño de la fuente dentro de los campos */
+    height: auto;
+    /* Asegura que los campos tengan más altura si es necesario */
+}
+
+/* Estilo para el botón de cerrar */
+#close-form-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+#close-create-form-btn,
+#close-update-form-btn {
+    position: absolute;
+    top: 15px;
+    /* Separación desde la parte superior */
+    right: 15px;
+    /* Separación desde la parte derecha */
+    font-size: 24px;
+    /* Tamaño de la fuente */
+    color: #ff0000;
+    /* Color rojo */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    z-index: 1000;
+    /* Asegura que esté por encima del contenido */
+}
+
+/* Estilo para los títulos (encabezados) en azul pastel */
+/* Estilo para los títulos (encabezados) en azul pastel dentro de la tabla */
+table.table th {
+    background-color: #3e4567;
+    /* Azul pastel */
+    color: white;
+    /* Texto en blanco */
+}
+
+/* Estilo para las filas alternadas (gris suave y blanco) dentro de la tabla */
+table.table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+    /* Gris suave */
+}
+
+table.table tbody tr:nth-child(even) {
+    background-color: white;
+    /* Blanco */
+}
+
+/* Estilo para la tabla (opcional) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Opcional: agregar un borde suave a las celdas */
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre las filas (opcional) */
+tr:hover {
+    background-color: #3e4567;
+}

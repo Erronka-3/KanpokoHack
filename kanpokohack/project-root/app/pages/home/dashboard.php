@@ -45,13 +45,11 @@ $userRoles = $_SESSION['user_roles'];
 $isAdmin = in_array('admin', $userRoles);
 ?>
 
-
-
 <body>
 
 
     <!-- Contenedor principal -->
-    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center py-3">
+    <div class="container-fluid min-vh-100 d-flex flex-column  py-3">
 
         <!-- Cabecera de bienvenida -->
         <header class="row mb-4">
@@ -141,8 +139,8 @@ $isAdmin = in_array('admin', $userRoles);
                         </button>
                         <div class="dropdown-menu" aria-labelledby="adminDropdown">
                             <a class="dropdown-item" href="index.php?route=12">Gestión de Usuarios</a>
-                            <a class="dropdown-item" href="https://localhost/Kanpokohack/Beñat/security/project-root/pages/index.php" target="_blank">Configuración del Sistema</a>
-                            <a class="dropdown-item" href="#web">Revisión de Seguridad</a>
+                            <a class="dropdown-item" href="https://localhost/Kanpokohack/Beñat/security/project-root/pages/index.php" target="_blank">Sistema de seguridad</a>
+                            
                         </div>
                     </div>
                 </div>

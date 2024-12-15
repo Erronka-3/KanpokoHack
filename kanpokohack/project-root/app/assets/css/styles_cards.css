@@ -27,13 +27,13 @@
 
 /* Para las imágenes de las tarjetas (Débito y Crédito) */
 #debit-card {
-    background-image: url('../../img/Debito.png');
+    background-image: url('../app/assets/img/Debito.png');
     height: 250px;
     /* Altura inicial de la imagen */
 }
 
 #credit-card {
-    background-image: url('../../img/Credito.png');
+    background-image: url('../app/assets/img/Credito.png');
     height: 250px;
     /* Altura inicial de la imagen */
 }
@@ -119,4 +119,51 @@
         /* Asegura que el contenido ocupe todo el ancho */
         border-radius: 15px;
     }
+}
+
+.card-title-credit {
+
+   
+    padding: 10px;
+    /* Opcional: Espaciado interno */
+    border-radius: 5px;
+    /* Opcional: Bordes redondeados */
+    display: inline-block;
+    /* Mantiene el fondo ajustado al contenido */
+    color: white;
+
+}
+
+.card-text-credit {
+  
+    margin-top: 90px;
+    /* Opcional: Espaciado interno */
+    border-radius: 5px;
+    /* Opcional: Bordes redondeados */
+    display: inline-block;
+    /* Mantiene el fondo ajustado al contenido */
+    color: white;
+}
+
+.card-title-debit {
+   
+
+    padding: 10px;
+    /* Opcional: Espaciado interno */
+    border-radius: 5px;
+    /* Opcional: Bordes redondeados */
+    display: inline-block;
+    /* Mantiene el fondo ajustado al contenido */
+    color: white;
+}
+
+.card-text-debit {
+ 
+    margin-top: 90px;
+    /* Opcional: Espaciado interno */
+    border-radius: 5px;
+    /* Opcional: Bordes redondeados */
+    display: inline-block;
+    /* Mantiene el fondo ajustado al contenido */
+    color: white;
 }

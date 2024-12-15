@@ -1,0 +1,65 @@
+  /* Estilos generales para la tabla */
+  table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Estilo para los encabezados de la tabla */
+table.table th {
+    background-color: #3e4567;
+    /* Azul pastel */
+    color: white;
+    /* Texto en blanco */
+    padding: 12px 15px;
+    /* Relleno para que se vea más espacioso */
+    text-align: left;
+}
+
+/* Estilo para las filas alternadas (gris suave y blanco) dentro de la tabla */
+table.table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+    /* Gris suave */
+}
+
+table.table tbody tr:nth-child(even) {
+    background-color: white;
+    /* Blanco */
+}
+
+/* Estilo para las celdas de la tabla */
+table td,
+table th {
+    border: 1px solid #ddd;
+    /* Borde suave */
+    padding: 10px 15px;
+    /* Relleno para mayor espacio */
+    text-align: left;
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre las filas */
+td:hover {
+    background-color: #dff9d1;
+    /* Gris claro */
+}
+
+/* Estilo para los botones dentro de la tabla */
+button {
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Verde oscuro al pasar el ratón */
+}
+
+/* Opcional: margen alrededor de la tabla para separarla de otros elementos */
+table.table {
+    margin-top: 30px;
+}

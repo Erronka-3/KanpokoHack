@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Tarjetas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../app/assets/css/styles_cards.css">
+    <script defer src="../app/assets/js/scripts_cards.js"></script>
 </head>
 <?php
 ini_set('display_errors', '0'); // No mostrar errores en pantalla
@@ -125,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
                 curl_close($ch);
 
-                // Suponiendo que la API maneja el cambio de estado, actualizar el valor de $currentCard
+
                 // Dependiendo de la respuesta de la API, podemos cambiar el valor de $currentCard
                 if ($currentCard === $card_type) {
                     $currentCard = ''; // Desactivar la tarjeta si estaba activa
@@ -139,181 +140,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<style>
-.card-selectable {
-    border: none;
-    width: 100%;
-    /* Ajusta el ancho del contenedor a su tamaño disponible */
-    height: auto;
-    /* El alto se ajustará proporcionalmente */
-    background-size: contain;
-    /* Ajusta la imagen manteniendo la proporción, sin recortarla */
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    /* Esquinas redondeadas */
-    display: flex;
-    align-items: flex-end;
-    /* Alinea el contenido hacia abajo */
-    justify-content: flex-start;
-    /* Alinea el contenido hacia la izquierda */
-    padding: 0px;
-    /* Espaciado interno para las tarjetas */
-    box-sizing: border-box;
-    /* Incluye el padding dentro del tamaño de la tarjeta */
-    position: relative;
-    /* Cambié a relative para que el card-body se posicione correctamente */
-    /* border: 3px solid grey; */
-    /* Borde de color dorado */
-}
-
-/* Para las imágenes de las tarjetas (Débito y Crédito) */
-#debit-card {
-    background-image: url('img/Debito.png');
-    height: 250px;
-    /* Altura inicial de la imagen */
-}
-
-#credit-card {
-    background-image: url('img/Credito.png');
-    height: 250px;
-    /* Altura inicial de la imagen */
-}
-
-/* Estilo cuando la tarjeta está activa */
-.card-selectable.active {
-    background-color: transparent;
-    /* Fondo transparente */
-    border: 5px solid #fdce03;
-    /* Borde de color dorado */
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-    /* Sombra para destacar */
-    transform: scale(1.05);
-    /* Efecto de zoom al hacer hover */
-}
-
-/* Efecto hover para todas las tarjetas */
-.card-selectable:hover {
-    transform: scale(1.05);
-    /* Un leve zoom al pasar el cursor */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0);
-    /* Sombra tenue al pasar el cursor */
-}
-
-/* Ajustar el contenido dentro de la tarjeta */
-.card-body {
-    position: absolute;
-    /* Mantiene el contenido encima de la imagen */
-
-    /* Empuja el contenido hacia la izquierda */
-    right: 0;
-    /* Limita el contenido a la derecha */
-    top: 40px;
-    text-align: center;
-    /* Alineación del texto a la izquierda */
-    color: black;
-    /* Asegura que el texto sea visible sobre la imagen */
-    background-color: rgba(0, 0, 0, 0.0);
-    /* Fondo semitransparente para mejorar la legibilidad */
-    width: 80%;
-    /* Asegura que el contenido ocupe todo el ancho */
-    border-radius: 15px;
-}
-
-/* Estilo del texto dentro de la tarjeta */
-.card-body .card-text {
-    font-size: 1rem;
-    /* Tamaño de fuente más pequeño para ser más flexible */
-    font-weight: bold;
-}
-
-/* Media queries para asegurar la responsividad */
-@media (max-width: 768px) {
-    .card-selectable {
-        height: 200px;
-        /* Reduce la altura en pantallas pequeñas */
-    }
-
-    .card-body {
-        font-size: 0.9rem;
-        /* Ajusta el tamaño de la fuente */
-        padding: 5px;
-        /* Reduce el padding en pantallas pequeñas */
-    }
-}
-
-@media (min-width: 200px) {
-    .card-body {
-        position: absolute;
-        /* Mantiene el contenido encima de la imagen */
-
-        /* Empuja el contenido hacia la izquierda */
-        right: 0;
-        /* Limita el contenido a la derecha */
-        top: 0;
-        text-align: center;
-        /* Alineación del texto a la izquierda */
-        color: black;
-        /* Asegura que el texto sea visible sobre la imagen */
-        background-color: rgba(0, 0, 0, 0.0);
-        /* Fondo semitransparente para mejorar la legibilidad */
-        width: 80%;
-        /* Asegura que el contenido ocupe todo el ancho */
-        border-radius: 15px;
-    }
-}
-
-.card-title-credit {
-    background-color: #de3213;
-    /* Fondo blanco */
-    padding: 10px;
-    /* Opcional: Espaciado interno */
-    border-radius: 5px;
-    /* Opcional: Bordes redondeados */
-    display: inline-block;
-    /* Mantiene el fondo ajustado al contenido */
-    color: white;
-
-}
-
-.card-text-credit {
-    background-color: #de3213;
-    Fondo blanco
-    /* Opcional: Espaciado interno */
-    border-radius: 5px;
-    /* Opcional: Bordes redondeados */
-    display: inline-block;
-    /* Mantiene el fondo ajustado al contenido */
-    color: white;
-}
-
-.card-title-debit {
-    background-color: #205eef;
-    /* Fondo blanco */
-    padding: 10px;
-    /* Opcional: Espaciado interno */
-    border-radius: 5px;
-    /* Opcional: Bordes redondeados */
-    display: inline-block;
-    /* Mantiene el fondo ajustado al contenido */
-    color: white;
-}
-
-.card-text-debit {
-    background-color: #205eef;
-    /* Fondo blanco */
-    /* Opcional: Espaciado interno */
-    border-radius: 5px;
-    /* Opcional: Bordes redondeados */
-    display: inline-block;
-    /* Mantiene el fondo ajustado al contenido */
-    color: white;
-}
-</style>
-
 
 <body>
-    <div class="container-fluid min-vh-100 py-5">
+    <div class="container-fluid min-vh-100 py-1">
         <div class="row mb-4">
             <div class="col-12 text-center">
                 <h1 class="h3">Gestión de Tarjetas</h1>
