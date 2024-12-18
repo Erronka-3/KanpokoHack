@@ -1,0 +1,462 @@
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4141
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4141
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4141
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 3572
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4141
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4136
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4136
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4136
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4136
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4136
+< 
+* Connection #1 to host 192.168.44.145 left intact
+* Hostname 192.168.44.145 was found in DNS cache
+*   Trying 192.168.44.145:8081...
+* Connected to 192.168.44.145 (192.168.44.145) port 8081
+* ALPN: curl offers h2,http/1.1
+*  CAfile: C:\xampp\htdocs\KanpokoHack\Beñat\kanpokohack\project-root\config\tls\cacert.pem
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  start date: Dec 10 11:34:17 2024 GMT
+*  expire date: Dec 10 11:34:17 2025 GMT
+*  subjectAltName: host "192.168.44.145" matched cert's IP address!
+*  issuer: C=ES; ST=Bizkaia; L=Durango; O=KanpokoHack; OU=KanpokoHack; CN=192.168.44.145
+*  SSL certificate verify ok.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://192.168.44.145:8081/realms/KanpokoHack/protocol/openid-connect/token
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 192.168.44.145:8081]
+* [HTTP/2] [1] [:path: /realms/KanpokoHack/protocol/openid-connect/token]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 343]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /realms/KanpokoHack/protocol/openid-connect/token HTTP/2
+Host: 192.168.44.145:8081
+Accept: */*
+Content-Length: 343
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/2 200 
+< referrer-policy: no-referrer
+< x-frame-options: SAMEORIGIN
+< strict-transport-security: max-age=31536000; includeSubDomains
+< cache-control: no-store
+< x-content-type-options: nosniff
+< pragma: no-cache
+< x-xss-protection: 1; mode=block
+< content-type: application/json
+< content-length: 4136
+< 
+* Connection #1 to host 192.168.44.145 left intact

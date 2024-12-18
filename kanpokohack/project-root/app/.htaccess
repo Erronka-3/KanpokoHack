@@ -1,0 +1,52 @@
+# Bloquear acceso general a la carpeta app
+<Files "*">
+    Require all denied
+</Files>
+
+# Permitir acceso solo a archivos específicos
+<Files "callback.php">
+    Require all granted
+</Files>
+<Files "dashboard.php">
+    Require all granted
+</Files>
+<Files "logout.php">
+    Require all granted
+</Files>
+<Files "index.php">
+    Require all granted
+</Files>
+<Files "profile.php">
+    Require all granted
+</Files>
+<Files "expenses.php">
+    Require all granted
+</Files>
+<Files "register_expense.php">
+    Require all granted
+</Files>
+<Files "get_expenses.php">
+    Require all granted
+</Files>
+<Files "delete_expense.php">
+    Require all granted
+</Files>
+<Files "cards.php">
+    Require all granted
+</Files>
+<Files "roles.php">
+    Require all granted
+</Files>
+<Files "edit_roles.php">
+    Require all granted
+</Files>
+
+# Bloquear acceso a archivos sensibles
+<Files "error.log">
+    Require all denied
+</Files>
+# Permitir acceso a archivos con extensiones específicas
+<FilesMatch "\\.(txt|pem|png|jpg|css|js)$">
+    Require all granted
+</FilesMatch>
+
